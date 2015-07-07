@@ -428,3 +428,8 @@ C:\Users\laerte\Documents\GitHub\recommendedjob\FINALPROJECT\FinaleVersionCrowd\
 C:\Users\laerte\Documents\GitHub\recommendedjob\FINALPROJECT\FinaleVersionCrowd\recommenderSystems\bin\Debug\recommenderSystems.pdb
 C:\Users\laerte\Documents\GitHub\recommendedjob\FINALPROJECT\FinaleVersionCrowd\recommenderSystems\obj\Debug\recommenderSystems.csprojResolveAssemblyReference.cache
 >>>>>>> origin/master
+C:\Users\larissaf\Documents\GitHub\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionCrowd\recommenderSystems\bin\Debug\recommenderSystems.exe.config
+C:\Users\larissaf\Documents\GitHub\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionCrowd\recommenderSystems\obj\Debug\Interop.MLApp.dll
+C:\Users\larissaf\Documents\GitHub\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionCrowd\recommenderSystems\obj\Debug\recommenderSystems.csproj.ResolveComReference.cache
+C:\Users\larissaf\Documents\GitHub\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionCrowd\recommenderSystems\obj\Debug\recommenderSystems.exe
+C:\Users\larissaf\Documents\GitHub\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionCrowd\recommenderSystems\obj\Debug\recommenderSystems.pdb
