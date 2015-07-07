@@ -1,0 +1,16 @@
+c:\users\laerte\documents\visual studio 2012\Projects\MatlabTest\MatlabTest\bin\Debug\MatlabTest.exe.config
+c:\users\laerte\documents\visual studio 2012\Projects\MatlabTest\MatlabTest\bin\Debug\MatlabTest.exe
+c:\users\laerte\documents\visual studio 2012\Projects\MatlabTest\MatlabTest\bin\Debug\MatlabTest.pdb
+c:\users\laerte\documents\visual studio 2012\Projects\MatlabTest\MatlabTest\obj\Debug\MatlabTest.exe
+c:\users\laerte\documents\visual studio 2012\Projects\MatlabTest\MatlabTest\obj\Debug\MatlabTest.pdb
+c:\users\laerte\documents\visual studio 2012\Projects\MatlabTest\MatlabTest\obj\Debug\Interop.MLApp.dll
+c:\users\laerte\documents\visual studio 2012\Projects\MatlabTest\MatlabTest\obj\Debug\MatlabTest.csproj.ResolveComReference.cache
+c:\users\laerte\documents\visual studio 2012\Projects\MatlabTest\MatlabTest\obj\Debug\MatlabTest.csprojResolveAssemblyReference.cache
+C:\Users\laerte\Documents\GitHub\ummatlab\MatlabTest\MatlabTest\bin\Debug\MatlabTest.exe.config
+C:\Users\laerte\Documents\GitHub\ummatlab\MatlabTest\MatlabTest\obj\Debug\Interop.MLApp.dll
+C:\Users\laerte\Documents\GitHub\ummatlab\MatlabTest\MatlabTest\obj\Debug\MatlabTest.csproj.ResolveComReference.cache
+C:\Users\laerte\Documents\GitHub\ummatlab\MatlabTest\MatlabTest\obj\Debug\MatlabTest.exe
+C:\Users\laerte\Documents\GitHub\ummatlab\MatlabTest\MatlabTest\obj\Debug\MatlabTest.pdb
+C:\Users\laerte\Documents\GitHub\ummatlab\MatlabTest\MatlabTest\bin\Debug\MatlabTest.exe
+C:\Users\laerte\Documents\GitHub\ummatlab\MatlabTest\MatlabTest\bin\Debug\MatlabTest.pdb
+C:\Users\laerte\Documents\GitHub\ummatlab\MatlabTest\MatlabTest\obj\Debug\MatlabTest.csprojResolveAssemblyReference.cache

@@ -1,0 +1,13 @@
+C:\Users\Larissa\Documents\pesquisas miami\CSharp\projeto1\projeto1\bin\Debug\projeto1.exe.config
+C:\Users\Larissa\Documents\pesquisas miami\CSharp\projeto1\projeto1\obj\Debug\projeto1.csprojResolveAssemblyReference.cache
+C:\Users\Larissa\Documents\pesquisas miami\CSharp\projeto1\projeto1\bin\Debug\projeto1.exe
+C:\Users\Larissa\Documents\pesquisas miami\CSharp\projeto1\projeto1\bin\Debug\projeto1.pdb
+C:\Users\Larissa\Documents\pesquisas miami\CSharp\projeto1\projeto1\obj\Debug\projeto1.exe
+C:\Users\Larissa\Documents\pesquisas miami\CSharp\projeto1\projeto1\obj\Debug\projeto1.pdb
+C:\Users\Larissa\Documents\pesquisas miami\CSharp\projeto1\projeto1\obj\Debug\Interop.MLApp.dll
+C:\Users\Larissa\Documents\pesquisas miami\CSharp\projeto1\projeto1\obj\Debug\projeto1.csproj.ResolveComReference.cache
+C:\Users\laerte\Documents\GitHub\ummatlab\Logistic Regression\projeto1\projeto1\bin\Debug\projeto1.exe.config
+C:\Users\laerte\Documents\GitHub\ummatlab\Logistic Regression\projeto1\projeto1\obj\Debug\Interop.MLApp.dll
+C:\Users\laerte\Documents\GitHub\ummatlab\Logistic Regression\projeto1\projeto1\obj\Debug\projeto1.csproj.ResolveComReference.cache
+C:\Users\laerte\Documents\GitHub\ummatlab\Logistic Regression\projeto1\projeto1\obj\Debug\projeto1.exe
+C:\Users\laerte\Documents\GitHub\ummatlab\Logistic Regression\projeto1\projeto1\obj\Debug\projeto1.pdb

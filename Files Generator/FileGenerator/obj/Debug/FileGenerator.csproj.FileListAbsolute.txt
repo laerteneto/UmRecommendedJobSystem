@@ -1,0 +1,6 @@
+c:\users\larissaf\documents\visual studio 2012\Projects\FileGenerator\FileGenerator\bin\Debug\FileGenerator.exe.config
+c:\users\larissaf\documents\visual studio 2012\Projects\FileGenerator\FileGenerator\bin\Debug\FileGenerator.exe
+c:\users\larissaf\documents\visual studio 2012\Projects\FileGenerator\FileGenerator\bin\Debug\FileGenerator.pdb
+c:\users\larissaf\documents\visual studio 2012\Projects\FileGenerator\FileGenerator\obj\Debug\FileGenerator.csprojResolveAssemblyReference.cache
+c:\users\larissaf\documents\visual studio 2012\Projects\FileGenerator\FileGenerator\obj\Debug\FileGenerator.exe
+c:\users\larissaf\documents\visual studio 2012\Projects\FileGenerator\FileGenerator\obj\Debug\FileGenerator.pdb

@@ -1,0 +1,21 @@
+c:\users\larissaf\documents\visual studio 2012\Projects\recommenderSystems\recommenderSystems\bin\Debug\recommenderSystems.exe.config
+c:\users\larissaf\documents\visual studio 2012\Projects\recommenderSystems\recommenderSystems\bin\Debug\recommenderSystems.exe
+c:\users\larissaf\documents\visual studio 2012\Projects\recommenderSystems\recommenderSystems\bin\Debug\recommenderSystems.pdb
+c:\users\larissaf\documents\visual studio 2012\Projects\recommenderSystems\recommenderSystems\obj\Debug\recommenderSystems.csprojResolveAssemblyReference.cache
+c:\users\larissaf\documents\visual studio 2012\Projects\recommenderSystems\recommenderSystems\obj\Debug\Interop.MLApp.dll
+c:\users\larissaf\documents\visual studio 2012\Projects\recommenderSystems\recommenderSystems\obj\Debug\recommenderSystems.csproj.ResolveComReference.cache
+c:\users\larissaf\documents\visual studio 2012\Projects\recommenderSystems\recommenderSystems\obj\Debug\recommenderSystems.exe
+c:\users\larissaf\documents\visual studio 2012\Projects\recommenderSystems\recommenderSystems\obj\Debug\recommenderSystems.pdb
+C:\Users\larissaf\Documents\GitHub\ummatlab\Analysis\recommenderSystems\bin\Debug\recommenderSystems.exe.config
+C:\Users\larissaf\Documents\GitHub\ummatlab\Analysis\recommenderSystems\obj\Debug\Interop.MLApp.dll
+C:\Users\larissaf\Documents\GitHub\ummatlab\Analysis\recommenderSystems\obj\Debug\recommenderSystems.csproj.ResolveComReference.cache
+C:\Users\larissaf\Documents\GitHub\ummatlab\Analysis\recommenderSystems\obj\Debug\recommenderSystems.exe
+C:\Users\larissaf\Documents\GitHub\ummatlab\Analysis\recommenderSystems\obj\Debug\recommenderSystems.pdb
+C:\Users\larissaf\Desktop\analysis\recommenderSystems\bin\Debug\recommenderSystems.exe.config
+C:\Users\larissaf\Desktop\analysis\recommenderSystems\obj\Debug\Interop.MLApp.dll
+C:\Users\larissaf\Desktop\analysis\recommenderSystems\obj\Debug\recommenderSystems.csproj.ResolveComReference.cache
+C:\Users\larissaf\Desktop\analysis\recommenderSystems\obj\Debug\recommenderSystems.exe
+C:\Users\larissaf\Desktop\analysis\recommenderSystems\obj\Debug\recommenderSystems.pdb
+C:\Users\larissaf\Desktop\analysis\recommenderSystems\bin\Debug\recommenderSystems.exe
+C:\Users\larissaf\Desktop\analysis\recommenderSystems\bin\Debug\recommenderSystems.pdb
+C:\Users\larissaf\Desktop\analysis\recommenderSystems\obj\Debug\recommenderSystems.csprojResolveAssemblyReference.cache

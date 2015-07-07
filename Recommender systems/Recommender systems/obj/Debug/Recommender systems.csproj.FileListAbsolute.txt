@@ -1,0 +1,16 @@
+c:\users\laerte\documents\visual studio 2012\Projects\Recommender systems\Recommender systems\bin\Debug\Recommender systems.exe.config
+c:\users\laerte\documents\visual studio 2012\Projects\Recommender systems\Recommender systems\obj\Debug\Recommender systems.csprojResolveAssemblyReference.cache
+c:\users\laerte\documents\visual studio 2012\Projects\Recommender systems\Recommender systems\obj\Debug\Interop.MLApp.dll
+c:\users\laerte\documents\visual studio 2012\Projects\Recommender systems\Recommender systems\obj\Debug\Recommender systems.csproj.ResolveComReference.cache
+c:\users\laerte\documents\visual studio 2012\Projects\Recommender systems\Recommender systems\bin\Debug\Recommender systems.exe
+c:\users\laerte\documents\visual studio 2012\Projects\Recommender systems\Recommender systems\bin\Debug\Recommender systems.pdb
+c:\users\laerte\documents\visual studio 2012\Projects\Recommender systems\Recommender systems\obj\Debug\Recommender systems.exe
+c:\users\laerte\documents\visual studio 2012\Projects\Recommender systems\Recommender systems\obj\Debug\Recommender systems.pdb
+C:\Users\laerte\Documents\GitHub\ummatlab\Recommender systems\Recommender systems\bin\Debug\Recommender systems.exe.config
+C:\Users\laerte\Documents\GitHub\ummatlab\Recommender systems\Recommender systems\obj\Debug\Interop.MLApp.dll
+C:\Users\laerte\Documents\GitHub\ummatlab\Recommender systems\Recommender systems\obj\Debug\Recommender systems.csproj.ResolveComReference.cache
+C:\Users\laerte\Documents\GitHub\ummatlab\Recommender systems\Recommender systems\obj\Debug\Recommender systems.exe
+C:\Users\laerte\Documents\GitHub\ummatlab\Recommender systems\Recommender systems\obj\Debug\Recommender systems.pdb
+C:\Users\laerte\Documents\GitHub\ummatlab\Recommender systems\Recommender systems\obj\Debug\Recommender systems.csprojResolveAssemblyReference.cache
+C:\Users\laerte\Documents\GitHub\ummatlab\Recommender systems\Recommender systems\bin\Debug\Recommender systems.exe
+C:\Users\laerte\Documents\GitHub\ummatlab\Recommender systems\Recommender systems\bin\Debug\Recommender systems.pdb
