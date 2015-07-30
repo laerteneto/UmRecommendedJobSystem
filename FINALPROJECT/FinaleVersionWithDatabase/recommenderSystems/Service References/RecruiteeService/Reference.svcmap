@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8ae0ebc9-2564-4347-a883-16e80e195fae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://umdbms.no-ip.info/umnewrecruiteewebsite/service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="502279b5-a669-4aaa-9a7e-066b18b3de47" SourceId="1" SourceUrl="http://umdbms.no-ip.info/UMNewRecruiteeWebsite/Service.svc?wsdl" />
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="5bc677d1-a1c8-43d3-bd08-6a97379cb0ea" SourceId="1" SourceUrl="http://umdbms.no-ip.info/UMNewRecruiteeWebsite/Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="df6103c7-352c-4fed-aee6-3445ebbd782f" SourceId="1" SourceUrl="http://umdbms.no-ip.info/UMNewRecruiteeWebsite/Service.svc?xsd=xsd3" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="9fcb83ed-af22-429c-b272-29e1f0031dc7" SourceId="1" SourceUrl="http://umdbms.no-ip.info/UMNewRecruiteeWebsite/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service3.xsd" MetadataType="Schema" ID="fb476d94-5397-46c0-b8d5-85ce5bf5e017" SourceId="1" SourceUrl="http://umdbms.no-ip.info/UMNewRecruiteeWebsite/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="bad9115a-dbf6-40cc-8f2a-ed15d7fc4e41" SourceId="1" SourceUrl="http://umdbms.no-ip.info/UMNewRecruiteeWebsite/Service.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
