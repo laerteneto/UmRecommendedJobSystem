@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://umdbms.no-ip.info/UMNewJobWebsite/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://umdbms.no-ip.info/UMNewJobWebsite/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://umdbms.no-ip.info/UMNewJobWebsite/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UMNewJobWebsite.DomainDTO" />
+      <xsd:import schemaLocation="http://umdbms.no-ip.info/UMNewJobWebsite/Service.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceWCF_selectAllCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectAllCategory" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectAllCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectAllCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectCategoryById_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectCategoryById" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectCategoryById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectCategoryByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_insertCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertCategory" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_insertCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_updateCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateCategory" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_updateCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_deleteCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteCategory" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_deleteCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectAllCompensation_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectAllCompensation" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectAllCompensation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectAllCompensationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectCompensationById_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectCompensationById" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectCompensationById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectCompensationByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_insertCompensation_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertCompensation" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_insertCompensation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertCompensationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_updateCompensation_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateCompensation" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_updateCompensation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateCompensationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_deleteCompensation_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteCompensation" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_deleteCompensation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteCompensationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectAllEmployer_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectAllEmployer" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectAllEmployer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectAllEmployerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectEmployerById_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectEmployerById" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectEmployerById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectEmployerByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_insertEmployer_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertEmployer" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_insertEmployer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertEmployerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_updateEmployer_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateEmployer" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_updateEmployer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateEmployerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_deleteEmployer_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteEmployer" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_deleteEmployer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteEmployerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectAllJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectAllJob" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectAllJob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectAllJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectJobNotDoneByRecruiteeIdRecommendation_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectJobNotDoneByRecruiteeIdRecommendation" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectJobNotDoneByRecruiteeIdRecommendation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectJobNotDoneByRecruiteeIdRecommendationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectJobIdNotDoneByRecruiteeId_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectJobIdNotDoneByRecruiteeId" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectJobIdNotDoneByRecruiteeId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectJobIdNotDoneByRecruiteeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectJobById_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectJobById" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectJobById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectJobByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_insertJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertJob" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_insertJob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_updateJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateJob" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_updateJob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_deleteJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteJob" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_deleteJob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_createJobDTO_InputMessage">
+    <wsdl:part name="parameters" element="tns:createJobDTO" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_createJobDTO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createJobDTOResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_addSkillToJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:addSkillToJob" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_addSkillToJob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addSkillToJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_removeSkillFromJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeSkillFromJob" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_removeSkillFromJob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeSkillFromJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectJobBySkillId_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectJobBySkillId" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectJobBySkillId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectJobBySkillIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectExpressionNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectExpressionNames" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectExpressionNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectExpressionNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectExpressionDifficulty_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectExpressionDifficulty" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectExpressionDifficulty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectExpressionDifficultyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectAllSkill_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectAllSkill" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectAllSkill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectAllSkillResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectSkillById_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectSkillById" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_selectSkillById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectSkillByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_insertSkill_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertSkill" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_insertSkill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertSkillResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_updateSkill_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateSkill" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_updateSkill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateSkillResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_deleteSkill_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteSkill" />
+  </wsdl:message>
+  <wsdl:message name="IServiceWCF_deleteSkill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteSkillResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceWCF">
+    <wsdl:operation name="selectAllCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectAllCategory" message="tns:IServiceWCF_selectAllCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectAllCategoryResponse" message="tns:IServiceWCF_selectAllCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectCategoryById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectCategoryById" message="tns:IServiceWCF_selectCategoryById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectCategoryByIdResponse" message="tns:IServiceWCF_selectCategoryById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/insertCategory" message="tns:IServiceWCF_insertCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/insertCategoryResponse" message="tns:IServiceWCF_insertCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/updateCategory" message="tns:IServiceWCF_updateCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/updateCategoryResponse" message="tns:IServiceWCF_updateCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/deleteCategory" message="tns:IServiceWCF_deleteCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/deleteCategoryResponse" message="tns:IServiceWCF_deleteCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectAllCompensation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectAllCompensation" message="tns:IServiceWCF_selectAllCompensation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectAllCompensationResponse" message="tns:IServiceWCF_selectAllCompensation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectCompensationById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectCompensationById" message="tns:IServiceWCF_selectCompensationById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectCompensationByIdResponse" message="tns:IServiceWCF_selectCompensationById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertCompensation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/insertCompensation" message="tns:IServiceWCF_insertCompensation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/insertCompensationResponse" message="tns:IServiceWCF_insertCompensation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateCompensation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/updateCompensation" message="tns:IServiceWCF_updateCompensation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/updateCompensationResponse" message="tns:IServiceWCF_updateCompensation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteCompensation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/deleteCompensation" message="tns:IServiceWCF_deleteCompensation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/deleteCompensationResponse" message="tns:IServiceWCF_deleteCompensation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectAllEmployer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectAllEmployer" message="tns:IServiceWCF_selectAllEmployer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectAllEmployerResponse" message="tns:IServiceWCF_selectAllEmployer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectEmployerById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectEmployerById" message="tns:IServiceWCF_selectEmployerById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectEmployerByIdResponse" message="tns:IServiceWCF_selectEmployerById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertEmployer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/insertEmployer" message="tns:IServiceWCF_insertEmployer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/insertEmployerResponse" message="tns:IServiceWCF_insertEmployer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateEmployer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/updateEmployer" message="tns:IServiceWCF_updateEmployer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/updateEmployerResponse" message="tns:IServiceWCF_updateEmployer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteEmployer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/deleteEmployer" message="tns:IServiceWCF_deleteEmployer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/deleteEmployerResponse" message="tns:IServiceWCF_deleteEmployer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectAllJob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectAllJob" message="tns:IServiceWCF_selectAllJob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectAllJobResponse" message="tns:IServiceWCF_selectAllJob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectJobNotDoneByRecruiteeIdRecommendation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectJobNotDoneByRecruiteeIdRecommendation" message="tns:IServiceWCF_selectJobNotDoneByRecruiteeIdRecommendation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectJobNotDoneByRecruiteeIdRecommendationResponse" message="tns:IServiceWCF_selectJobNotDoneByRecruiteeIdRecommendation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectJobIdNotDoneByRecruiteeId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectJobIdNotDoneByRecruiteeId" message="tns:IServiceWCF_selectJobIdNotDoneByRecruiteeId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectJobIdNotDoneByRecruiteeIdResponse" message="tns:IServiceWCF_selectJobIdNotDoneByRecruiteeId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectJobById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectJobById" message="tns:IServiceWCF_selectJobById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectJobByIdResponse" message="tns:IServiceWCF_selectJobById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertJob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/insertJob" message="tns:IServiceWCF_insertJob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/insertJobResponse" message="tns:IServiceWCF_insertJob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateJob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/updateJob" message="tns:IServiceWCF_updateJob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/updateJobResponse" message="tns:IServiceWCF_updateJob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteJob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/deleteJob" message="tns:IServiceWCF_deleteJob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/deleteJobResponse" message="tns:IServiceWCF_deleteJob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createJobDTO">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/createJobDTO" message="tns:IServiceWCF_createJobDTO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/createJobDTOResponse" message="tns:IServiceWCF_createJobDTO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addSkillToJob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/addSkillToJob" message="tns:IServiceWCF_addSkillToJob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/addSkillToJobResponse" message="tns:IServiceWCF_addSkillToJob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeSkillFromJob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/removeSkillFromJob" message="tns:IServiceWCF_removeSkillFromJob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/removeSkillFromJobResponse" message="tns:IServiceWCF_removeSkillFromJob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectJobBySkillId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectJobBySkillId" message="tns:IServiceWCF_selectJobBySkillId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectJobBySkillIdResponse" message="tns:IServiceWCF_selectJobBySkillId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectExpressionNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectExpressionNames" message="tns:IServiceWCF_selectExpressionNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectExpressionNamesResponse" message="tns:IServiceWCF_selectExpressionNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectExpressionDifficulty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectExpressionDifficulty" message="tns:IServiceWCF_selectExpressionDifficulty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectExpressionDifficultyResponse" message="tns:IServiceWCF_selectExpressionDifficulty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectAllSkill">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectAllSkill" message="tns:IServiceWCF_selectAllSkill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectAllSkillResponse" message="tns:IServiceWCF_selectAllSkill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectSkillById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/selectSkillById" message="tns:IServiceWCF_selectSkillById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/selectSkillByIdResponse" message="tns:IServiceWCF_selectSkillById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertSkill">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/insertSkill" message="tns:IServiceWCF_insertSkill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/insertSkillResponse" message="tns:IServiceWCF_insertSkill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateSkill">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/updateSkill" message="tns:IServiceWCF_updateSkill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/updateSkillResponse" message="tns:IServiceWCF_updateSkill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteSkill">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceWCF/deleteSkill" message="tns:IServiceWCF_deleteSkill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceWCF/deleteSkillResponse" message="tns:IServiceWCF_deleteSkill_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceWCF" type="tns:IServiceWCF">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="selectAllCategory">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectAllCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectCategoryById">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectCategoryById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertCategory">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/insertCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateCategory">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/updateCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteCategory">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/deleteCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectAllCompensation">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectAllCompensation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectCompensationById">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectCompensationById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertCompensation">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/insertCompensation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateCompensation">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/updateCompensation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteCompensation">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/deleteCompensation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectAllEmployer">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectAllEmployer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectEmployerById">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectEmployerById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertEmployer">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/insertEmployer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateEmployer">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/updateEmployer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteEmployer">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/deleteEmployer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectAllJob">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectAllJob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectJobNotDoneByRecruiteeIdRecommendation">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectJobNotDoneByRecruiteeIdRecommendation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectJobIdNotDoneByRecruiteeId">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectJobIdNotDoneByRecruiteeId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectJobById">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectJobById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertJob">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/insertJob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateJob">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/updateJob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteJob">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/deleteJob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createJobDTO">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/createJobDTO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addSkillToJob">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/addSkillToJob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeSkillFromJob">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/removeSkillFromJob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectJobBySkillId">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectJobBySkillId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectExpressionNames">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectExpressionNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectExpressionDifficulty">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectExpressionDifficulty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectAllSkill">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectAllSkill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectSkillById">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/selectSkillById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertSkill">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/insertSkill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateSkill">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/updateSkill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSkill">
+      <soap:operation soapAction="http://tempuri.org/IServiceWCF/deleteSkill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IServiceWCF" binding="tns:BasicHttpBinding_IServiceWCF">
+      <soap:address location="http://umdbms.no-ip.info/UMNewJobWebsite/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

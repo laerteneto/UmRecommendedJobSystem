@@ -1,0 +1,210 @@
+USER: 53007c0a-d29f-4cf2-b8f5-081addd0d6ba with rating:	1
+Job 8d1e7ea2-26e3-4693-ac85-0c975dac9448	2.50	2.27	3.25	75.00	2.50
+Job eefed63b-8eeb-431b-bb50-63c25798ea83	1.50	2.07	3.50	100.00	1.50
+Job 9ced877c-497e-45b6-9549-562c758e00fa	1.00	2.01	5.00	100.00	1.00
+Job 61fdf88b-1db1-463f-baeb-848a9a1f815d	1.50	1.98	3.50	100.00	1.50
+Job 694a4a01-56e0-494a-b030-0d2757edb4c1	1.50	1.85	4.25	75.00	1.25
+Job bc4301e9-9b45-4464-81af-2f180218a093	2.50	1.85	4.08	83.33	2.25
+Job d86aef28-5ee7-4fd9-9a9b-de8cc06c4557	2.50	1.70	3.75	87.50	2.38
+Job 76a55b6c-21bd-4ce7-b9c7-dd3ae6340804	2.00	1.70	4.50	87.50	2.13
+RATING AVGS TOTAL	3.98
+PERCENTAGE AVGS TOTAL	88.54
+JOB DIFFICULTY AVGS TOTAL	1.88
+SIMILAR JOBS DIFFICULTY AVGS TOTAL	1.81
+SELF INACCURACY	-74.87
+
+USER: 40709433-b16c-4952-b662-08d28040c723 with rating:	3
+Job 8d1e7ea2-26e3-4693-ac85-0c975dac9448	2.75	2.47	5.00	100.00	2.75
+Job eefed63b-8eeb-431b-bb50-63c25798ea83	1.50	2.24	4.63	87.50	1.38
+Job 9ced877c-497e-45b6-9549-562c758e00fa	1.25	2.24	5.00	75.00	1.25
+Job 61fdf88b-1db1-463f-baeb-848a9a1f815d	1.50	2.18	4.63	87.50	1.38
+Job 20c132ad-0c7c-41bf-a35c-5a95fa87892a	3.50	2.14	3.75	100.00	3.50
+Job 694a4a01-56e0-494a-b030-0d2757edb4c1	1.50	2.14	4.63	87.50	1.38
+Job a41e2539-2194-4da3-8618-b1f5c7410576	2.75	2.04	5.00	75.00	2.75
+Job bc4301e9-9b45-4464-81af-2f180218a093	2.00	2.01	4.00	75.00	2.00
+Job d86aef28-5ee7-4fd9-9a9b-de8cc06c4557	2.75	2.01	5.00	75.00	2.75
+Job 76a55b6c-21bd-4ce7-b9c7-dd3ae6340804	2.00	2.00	4.00	100.00	2.00
+RATING AVGS TOTAL	4.56
+PERCENTAGE AVGS TOTAL	86.25
+JOB DIFFICULTY AVGS TOTAL	2.15
+SIMILAR JOBS DIFFICULTY AVGS TOTAL	2.11
+SELF INACCURACY	-34.25
+
+USER: 2545ed6f-c0cc-4e62-84c0-09559ee6a70c with rating:	3
+Job eefed63b-8eeb-431b-bb50-63c25798ea83	1.25	2.46	5.00	87.50	1.38
+Job 9ced877c-497e-45b6-9549-562c758e00fa	1.25	2.46	5.00	75.00	1.25
+Job 61fdf88b-1db1-463f-baeb-848a9a1f815d	1.25	2.39	5.00	87.50	1.38
+Job 20c132ad-0c7c-41bf-a35c-5a95fa87892a	3.50	2.35	5.00	100.00	3.50
+Job 694a4a01-56e0-494a-b030-0d2757edb4c1	1.25	2.35	5.00	87.50	1.38
+Job bc4301e9-9b45-4464-81af-2f180218a093	2.00	2.23	4.63	87.50	2.13
+Job d86aef28-5ee7-4fd9-9a9b-de8cc06c4557	2.25	2.20	4.50	75.00	2.25
+Job 76a55b6c-21bd-4ce7-b9c7-dd3ae6340804	2.00	2.20	4.63	87.50	2.13
+RATING AVGS TOTAL	4.84
+PERCENTAGE AVGS TOTAL	85.94
+JOB DIFFICULTY AVGS TOTAL	1.84
+SIMILAR JOBS DIFFICULTY AVGS TOTAL	1.92
+SELF INACCURACY	-38.06
+
+USER: e516fc68-5824-4cab-a0e7-09c47fda50fa with rating:	5
+Job 8d1e7ea2-26e3-4693-ac85-0c975dac9448	2.75	2.23	4.63	100.00	2.75
+Job eefed63b-8eeb-431b-bb50-63c25798ea83	1.50	2.23	5.00	100.00	1.50
+Job 61fdf88b-1db1-463f-baeb-848a9a1f815d	1.50	2.03	5.00	100.00	1.50
+Job 694a4a01-56e0-494a-b030-0d2757edb4c1	1.50	1.94	5.00	75.00	1.50
+Job a41e2539-2194-4da3-8618-b1f5c7410576	2.75	1.82	4.63	75.00	2.75
+Job bc4301e9-9b45-4464-81af-2f180218a093	2.25	1.81	4.00	100.00	2.25
+Job d86aef28-5ee7-4fd9-9a9b-de8cc06c4557	2.75	1.81	4.42	75.00	2.58
+Job 76a55b6c-21bd-4ce7-b9c7-dd3ae6340804	2.25	1.67	4.00	75.00	2.25
+RATING AVGS TOTAL	4.58
+PERCENTAGE AVGS TOTAL	87.50
+JOB DIFFICULTY AVGS TOTAL	2.16
+SIMILAR JOBS DIFFICULTY AVGS TOTAL	2.14
+SELF INACCURACY	9.09
+
+USER: 35580c3c-cce0-4e4e-a8f9-224345c606d7 with rating:	4
+Job 8d1e7ea2-26e3-4693-ac85-0c975dac9448	2.50	2.49	4.50	75.00	2.75
+Job eefed63b-8eeb-431b-bb50-63c25798ea83	1.50	2.49	3.75	100.00	1.50
+Job 9ced877c-497e-45b6-9549-562c758e00fa	1.00	2.27	5.00	100.00	1.00
+Job 61fdf88b-1db1-463f-baeb-848a9a1f815d	1.50	2.20	3.75	100.00	1.50
+Job 694a4a01-56e0-494a-b030-0d2757edb4c1	1.00	2.17	4.38	75.00	1.25
+Job a41e2539-2194-4da3-8618-b1f5c7410576	3.00	2.03	5.00	100.00	3.00
+Job bc4301e9-9b45-4464-81af-2f180218a093	2.25	2.03	4.50	87.50	2.38
+Job d86aef28-5ee7-4fd9-9a9b-de8cc06c4557	2.25	2.02	4.50	87.50	2.38
+Job 76a55b6c-21bd-4ce7-b9c7-dd3ae6340804	2.25	1.87	5.00	75.00	2.25
+RATING AVGS TOTAL	4.49
+PERCENTAGE AVGS TOTAL	88.89
+JOB DIFFICULTY AVGS TOTAL	1.92
+SIMILAR JOBS DIFFICULTY AVGS TOTAL	2.00
+SELF INACCURACY	-10.84
+
+USER: eae5dbf1-f428-4feb-87dd-3090c2e8ba05 with rating:	3
+Job 8d1e7ea2-26e3-4693-ac85-0c975dac9448	2.50	1.77	4.00	75.00	2.50
+Job eefed63b-8eeb-431b-bb50-63c25798ea83	1.50	1.61	2.25	100.00	1.50
+Job 61fdf88b-1db1-463f-baeb-848a9a1f815d	1.50	1.54	2.25	100.00	1.50
+Job 20c132ad-0c7c-41bf-a35c-5a95fa87892a	3.50	1.47	3.75	87.50	3.38
+Job 694a4a01-56e0-494a-b030-0d2757edb4c1	1.50	1.47	2.25	75.00	1.50
+Job a41e2539-2194-4da3-8618-b1f5c7410576	3.25	1.44	3.50	75.00	3.25
+Job bc4301e9-9b45-4464-81af-2f180218a093	2.50	1.44	4.00	75.00	2.50
+Job d86aef28-5ee7-4fd9-9a9b-de8cc06c4557	2.50	1.33	4.00	100.00	2.50
+RATING AVGS TOTAL	3.25
+PERCENTAGE AVGS TOTAL	85.94
+JOB DIFFICULTY AVGS TOTAL	2.34
+SIMILAR JOBS DIFFICULTY AVGS TOTAL	2.33
+SELF INACCURACY	-7.69
+
+USER: bd6e7248-ffda-451e-a9b2-34a5fc28f8a7 with rating:	4
+Job 9ced877c-497e-45b6-9549-562c758e00fa	1.00	1.43	4.25	100.00	1.00
+Job 694a4a01-56e0-494a-b030-0d2757edb4c1	1.00	1.32	4.25	75.00	1.00
+Job bc4301e9-9b45-4464-81af-2f180218a093	2.25	1.21	4.50	100.00	2.25
+Job d86aef28-5ee7-4fd9-9a9b-de8cc06c4557	2.25	1.14	4.50	75.00	2.25
+Job 76a55b6c-21bd-4ce7-b9c7-dd3ae6340804	2.25	1.08	4.50	75.00	2.25
+RATING AVGS TOTAL	4.40
+PERCENTAGE AVGS TOTAL	85.00
+JOB DIFFICULTY AVGS TOTAL	1.75
+SIMILAR JOBS DIFFICULTY AVGS TOTAL	1.75
+SELF INACCURACY	-9.09
+
+USER: e5af15f0-77d1-4363-9fa9-35c60b0eb1c3 with rating:	4
+Job 8d1e7ea2-26e3-4693-ac85-0c975dac9448	2.75	2.43	5.00	100.00	2.75
+Job eefed63b-8eeb-431b-bb50-63c25798ea83	1.50	2.21	4.00	100.00	1.50
+Job 61fdf88b-1db1-463f-baeb-848a9a1f815d	1.50	2.21	4.00	100.00	1.50
+Job 694a4a01-56e0-494a-b030-0d2757edb4c1	1.50	2.11	4.00	75.00	1.50
+Job a41e2539-2194-4da3-8618-b1f5c7410576	2.75	2.11	5.00	75.00	2.75
+Job bc4301e9-9b45-4464-81af-2f180218a093	2.25	1.97	5.00	100.00	2.25
+Job d86aef28-5ee7-4fd9-9a9b-de8cc06c4557	2.75	1.97	5.00	75.00	2.50
+Job 76a55b6c-21bd-4ce7-b9c7-dd3ae6340804	2.25	1.97	5.00	75.00	2.25
+RATING AVGS TOTAL	4.63
+PERCENTAGE AVGS TOTAL	87.50
+JOB DIFFICULTY AVGS TOTAL	2.16
+SIMILAR JOBS DIFFICULTY AVGS TOTAL	2.13
+SELF INACCURACY	-13.51
+
+USER: db27621f-7258-46a8-ad67-3f9ce416f29a with rating:	4
+Job 8d1e7ea2-26e3-4693-ac85-0c975dac9448	2.75	2.51	5.00	87.50	2.88
+Job eefed63b-8eeb-431b-bb50-63c25798ea83	1.50	2.51	5.00	100.00	1.50
+Job 61fdf88b-1db1-463f-baeb-848a9a1f815d	1.50	2.29	5.00	100.00	1.50
+Job 20c132ad-0c7c-41bf-a35c-5a95fa87892a	3.50	2.19	3.38	87.50	3.38
+Job 694a4a01-56e0-494a-b030-0d2757edb4c1	1.50	2.08	5.00	75.00	1.50
+Job a41e2539-2194-4da3-8618-b1f5c7410576	2.75	2.08	3.92	83.33	3.00
+Job d86aef28-5ee7-4fd9-9a9b-de8cc06c4557	2.75	2.05	5.00	75.00	2.75
+RATING AVGS TOTAL	4.61
+PERCENTAGE AVGS TOTAL	86.90
+JOB DIFFICULTY AVGS TOTAL	2.32
+SIMILAR JOBS DIFFICULTY AVGS TOTAL	2.36
+SELF INACCURACY	-13.29
+
+USER: f324a9d3-64a1-4d3b-b9f8-479316daf818 with rating:	2
+Job 8d1e7ea2-26e3-4693-ac85-0c975dac9448	2.50	1.37	3.75	75.00	2.50
+Job 20c132ad-0c7c-41bf-a35c-5a95fa87892a	3.50	1.13	3.00	100.00	3.50
+Job bc4301e9-9b45-4464-81af-2f180218a093	2.25	1.02	2.67	83.33	2.25
+Job d86aef28-5ee7-4fd9-9a9b-de8cc06c4557	2.25	1.02	2.50	87.50	2.38
+Job 76a55b6c-21bd-4ce7-b9c7-dd3ae6340804	2.25	1.02	2.13	87.50	2.13
+RATING AVGS TOTAL	2.81
+PERCENTAGE AVGS TOTAL	86.67
+JOB DIFFICULTY AVGS TOTAL	2.55
+SIMILAR JOBS DIFFICULTY AVGS TOTAL	2.55
+SELF INACCURACY	-28.78
+
+USER: 53002b04-2749-4a56-80bd-885850bca434 with rating:	4
+Job 8d1e7ea2-26e3-4693-ac85-0c975dac9448	2.50	4.68	3.83	87.50	2.71
+Job eefed63b-8eeb-431b-bb50-63c25798ea83	1.50	4.68	4.60	85.00	1.55
+Job 9ced877c-497e-45b6-9549-562c758e00fa	1.00	4.68	5.00	93.75	1.06
+Job 61fdf88b-1db1-463f-baeb-848a9a1f815d	1.50	4.68	4.60	85.00	1.55
+Job 20c132ad-0c7c-41bf-a35c-5a95fa87892a	3.50	4.68	3.21	83.33	3.50
+Job 694a4a01-56e0-494a-b030-0d2757edb4c1	1.50	4.68	4.79	79.17	1.21
+Job a41e2539-2194-4da3-8618-b1f5c7410576	2.75	4.26	3.96	79.17	2.96
+Job bc4301e9-9b45-4464-81af-2f180218a093	2.50	4.26	3.56	87.50	2.25
+Job d86aef28-5ee7-4fd9-9a9b-de8cc06c4557	2.50	4.26	3.69	80.56	2.47
+Job 76a55b6c-21bd-4ce7-b9c7-dd3ae6340804	2.00	4.26	4.06	81.25	2.06
+RATING AVGS TOTAL	4.13
+PERCENTAGE AVGS TOTAL	84.22
+JOB DIFFICULTY AVGS TOTAL	2.13
+SIMILAR JOBS DIFFICULTY AVGS TOTAL	2.13
+SELF INACCURACY	-3.17
+
+Avgs total (ratings)	4.20749098124098
+Avgs total (self rating)	3.36363636363636
+Avgs total (similarity)	86.6681096681097
+Community inaccuracy	-20.406308239565
+
+Number of users that underestimated themselves	6
+Number of users that right estimated about themselves	5
+Number of users that overestimated themselves	0
+
+Number of self ratings (before calculation)
+amount of 1:	1
+amount of 2:	1
+amount of 3:	3
+amount of 4:	5
+amount of 5:	1
+
+Number of self ratings (after calculation)
+amount of 1:	0
+amount of 2:	0
+amount of 3:	2
+amount of 4:	4
+amount of 5:	5
+
+For the people who rated themselves as 1 (1)
+amount of those who overestimated themselves were:	0
+amount of those who estimated themselves correctly were:	0
+amount of those who underestimated themselves were:	1
+
+For the people who rated themselves as 2 (1)
+amount of those who overestimated themselves were:	0
+amount of those who estimated themselves correctly were:	0
+amount of those who underestimated themselves were:	1
+
+For the people who rated themselves as 3 (3)
+amount of those who overestimated themselves were:	0
+amount of those who estimated themselves correctly were:	1
+amount of those who underestimated themselves were:	2
+
+For the people who rated themselves as 4 (5)
+amount of those who overestimated themselves were:	0
+amount of those who estimated themselves correctly were:	3
+amount of those who underestimated themselves were:	2
+
+For the people who rated themselves as 5 (1)
+amount of those who overestimated themselves were:	0
+amount of those who estimated themselves correctly were:	1
+amount of those who underestimated themselves were:	0
