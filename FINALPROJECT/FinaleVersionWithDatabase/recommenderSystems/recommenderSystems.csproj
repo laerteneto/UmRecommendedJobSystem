@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC546438-CDB2-4C1B-8C63-9E99EA6E58FF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>recommenderSystems</RootNamespace>
+    <AssemblyName>recommenderSystems</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataResult.cs" />
+    <Compile Include="Domain\TaskDimensions.cs" />
+    <Compile Include="DriverWeb.cs" />
+    <Compile Include="FromWebToFile.cs" />
+    <Compile Include="Service References\ElasticService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\JobService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RecruiteeService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service\Interface\IElasticSvc.cs" />
+    <Compile Include="Service\Interface\IJobSvc.cs" />
+    <Compile Include="Service\Interface\IRecruiteeSvc.cs" />
+    <Compile Include="Service\Plugin\ElasticSvcImpl.cs" />
+    <Compile Include="Service\Plugin\JobSvcImpl.cs" />
+    <Compile Include="Service\Plugin\RecruiteeSvcImpl.cs" />
+    <Compile Include="TopJobData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Interface\IFileSystemSvc.cs" />
+    <Compile Include="Service\Interface\IMatlabSvc.cs" />
+    <Compile Include="Service\Plugin\FileSystemSvcImpl.cs" />
+    <Compile Include="Service\Plugin\MatlabSvcImpl.cs" />
+    <Compile Include="UserProfile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.AgeDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.EducationDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.IncomeDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.JobDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.RankingDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.RecommendedJobDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.RecruiteeDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.SkillDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.SkillDto1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.TaskDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.TaskRatingDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ElasticService\Service.wsdl" />
+    <None Include="Service References\ElasticService\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ElasticService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ElasticService\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ElasticService\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ElasticService\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ElasticService\Service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JobService\recommenderSystems.JobService.CategoryDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JobService\recommenderSystems.JobService.CompensationDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JobService\recommenderSystems.JobService.EmployerDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JobService\recommenderSystems.JobService.JobDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JobService\recommenderSystems.JobService.SkillDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JobService\Service.wsdl" />
+    <None Include="Service References\JobService\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JobService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JobService\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\JobService\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecruiteeService\recommenderSystems.RecruiteeService.AgeDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruiteeService\recommenderSystems.RecruiteeService.CategoryDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruiteeService\recommenderSystems.RecruiteeService.EducationDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruiteeService\recommenderSystems.RecruiteeService.IncomeDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruiteeService\recommenderSystems.RecruiteeService.RankingDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruiteeService\recommenderSystems.RecruiteeService.RecruiteeDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruiteeService\recommenderSystems.RecruiteeService.RecruiteeSkillDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruiteeService\recommenderSystems.RecruiteeService.SkillDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RecruiteeService\Service.wsdl" />
+    <None Include="Service References\RecruiteeService\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecruiteeService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecruiteeService\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecruiteeService\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MLApp">
+      <Guid>{C36E46AB-6A81-457B-9F91-A7719A06287F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="files\cofiCostFunc.m">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\expressions.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\fmincg.m">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\manhattanDistance.m">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\normalizeRatings.m">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\one_by_one_analysis.m">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\R.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\Rated_jobs_Generator.m">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\R_10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\R_20.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\R_30.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\R_40.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\scriptGeneration.m">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\user_table.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\user_table_10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\user_table_20.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\user_table_30.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\user_table_40.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\X.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\Y.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\Y_10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\Y_20.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\Y_30.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\Y_40.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Service References\RecruiteeService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RecruiteeService\configuration.svcinfo" />
+    <None Include="Service References\RecruiteeService\configuration91.svcinfo" />
+    <None Include="Service References\RecruiteeService\Service.disco" />
+    <None Include="Service References\ElasticService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ElasticService\configuration.svcinfo" />
+    <None Include="Service References\ElasticService\configuration91.svcinfo" />
+    <None Include="Service References\ElasticService\Service.disco" />
+    <None Include="Service References\JobService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\JobService\configuration.svcinfo" />
+    <None Include="Service References\JobService\configuration91.svcinfo" />
+    <None Include="Service References\JobService\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ElasticService\" />
+    <WCFMetadataStorage Include="Service References\JobService\" />
+    <WCFMetadataStorage Include="Service References\RecruiteeService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

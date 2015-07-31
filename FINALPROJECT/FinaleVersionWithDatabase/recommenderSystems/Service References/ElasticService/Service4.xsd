@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/UMNewJobWebsite.DomainDTO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UMNewJobWebsite.DomainDTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://umdbms.no-ip.info/UMNewElasticWebsite/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfJobDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JobDto" nillable="true" type="tns:JobDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJobDto" nillable="true" type="tns:ArrayOfJobDto" />
+  <xs:complexType name="JobDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompensationId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployerId" type="ser:guid" />
+      <xs:element minOccurs="0" name="JobCompensationValue" type="xs:double" />
+      <xs:element minOccurs="0" name="JobDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JobExperienceLevel" type="xs:double" />
+      <xs:element minOccurs="0" name="JobId" type="ser:guid" />
+      <xs:element minOccurs="0" name="JobName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JobQuota" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JobDto" nillable="true" type="tns:JobDto" />
+  <xs:complexType name="ArrayOfSkillDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SkillDto" nillable="true" type="tns:SkillDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSkillDto" nillable="true" type="tns:ArrayOfSkillDto" />
+  <xs:complexType name="SkillDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SkillDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SkillId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SkillName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SkillDto" nillable="true" type="tns:SkillDto" />
+</xs:schema>
