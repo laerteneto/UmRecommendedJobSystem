@@ -47,7 +47,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Domain\TaskDimensions.cs" />
-    <Compile Include="DriverFiles.cs" />
+    <Compile Include="DriverWeb.cs" />
     <Compile Include="FromWebToFile.cs" />
     <Compile Include="Service References\ElasticService\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -320,6 +320,9 @@
     <WCFMetadataStorage Include="Service References\ElasticService\" />
     <WCFMetadataStorage Include="Service References\JobService\" />
     <WCFMetadataStorage Include="Service References\RecruiteeService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Business\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

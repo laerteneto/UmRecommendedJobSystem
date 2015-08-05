@@ -9,5 +9,6 @@ namespace recommenderSystems.Service.Interface
     interface IRecruiteeSvc
     {
         String[] selectRecruiteeNames();
+        double[] selectRecruiteeSkills();
     }
 }
