@@ -9,7 +9,7 @@ namespace recommenderSystems.Service.Interface
 {
     interface IMatlabSvc
     {
-        void changeDirectory(String path);
-        object[] executeFilter(TaskDimensions task, String[] job_list, String path, double[,] my_ratings, double[,] Y, double[,] R, double[,] X, int user_number);
+        bool changeDirectory(String path);
+        object[] executeFilter(TaskDimensions task, String[] job_list, String path, double[,] my_ratings, double[,] Y, double[,] R, double[,] X);
     }
 }
