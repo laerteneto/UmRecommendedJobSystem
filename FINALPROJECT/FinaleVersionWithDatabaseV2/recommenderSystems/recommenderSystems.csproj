@@ -45,9 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\BusinessManager.cs" />
+    <Compile Include="Business\JobManager.cs" />
     <Compile Include="Business\DriverFileManager.cs" />
     <Compile Include="Business\DriverWebManager.cs" />
     <Compile Include="Business\ElasticManager.cs" />
+    <Compile Include="Business\FileSystemManager.cs" />
     <Compile Include="DataResult.cs">
       <SubType>Code</SubType>
     </Compile>

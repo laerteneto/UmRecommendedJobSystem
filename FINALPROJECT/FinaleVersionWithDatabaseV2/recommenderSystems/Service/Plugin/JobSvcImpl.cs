@@ -12,16 +12,30 @@ namespace recommenderSystems.Service.Plugin
         //jobs ids (used in expressions file)
         public string[] selectExpressionNames()
         {
-            JobService.ServiceWCFClient svc = new JobService.ServiceWCFClient();
-            Guid[] jobNames = svc.selectExpressionNames();
-            return Array.ConvertAll(jobNames, x => x.ToString());
+            try
+            {
+                JobService.ServiceWCFClient svc = new JobService.ServiceWCFClient();
+                Guid[] jobNames = svc.selectExpressionNames();
+                return Array.ConvertAll(jobNames, x => x.ToString());
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         //job difficulty (used in X)
         public double[] selectExpressionDifficulty()
         {
-            JobService.ServiceWCFClient svc = new JobService.ServiceWCFClient();
-            return svc.selectExpressionDifficulty();
+            try
+            {
+                JobService.ServiceWCFClient svc = new JobService.ServiceWCFClient();
+                return svc.selectExpressionDifficulty();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }
