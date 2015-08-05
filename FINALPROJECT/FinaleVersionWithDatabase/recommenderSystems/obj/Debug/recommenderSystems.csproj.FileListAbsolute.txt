@@ -440,3 +440,8 @@ C:\Users\larissaf\Desktop\FinaleVersionWithDatabase\recommenderSystems\bin\Debug
 C:\Users\larissaf\Desktop\FinaleVersionWithDatabase\recommenderSystems\bin\Debug\files\new_Y_53.txt
 C:\Users\larissaf\Desktop\FinaleVersionWithDatabase\recommenderSystems\bin\Debug\files\one_by_one_analysis.m
 C:\Users\larissaf\Desktop\FinaleVersionWithDatabase\recommenderSystems\bin\Debug\files\new_R.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabase\recommenderSystems\bin\Debug\recommenderSystems.exe.config
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabase\recommenderSystems\obj\Debug\Interop.MLApp.dll
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabase\recommenderSystems\obj\Debug\recommenderSystems.csproj.ResolveComReference.cache
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabase\recommenderSystems\obj\Debug\recommenderSystems.exe
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabase\recommenderSystems\obj\Debug\recommenderSystems.pdb
