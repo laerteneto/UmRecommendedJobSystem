@@ -17,20 +17,28 @@ namespace recommenderSystems.Service.Plugin
         ///<remarks>
         ///Number of Users(columns) and Number of Jobs(rows)
         ///</remarks>
-        public void detectSizeOfJobsColumns(TaskDimensions task, String path)
+        public bool detectSizeOfJobsColumns(TaskDimensions task, String path)
         {
-            using (TextReader readerR = File.OpenText(path))
+            try
             {
-                task.num_jobs_init = 0;
-                string line = readerR.ReadLine();
-                string[] temp = line.Split('\t');
-                task.num_users_init = temp.Length;
-                while (line != null)
+                using (TextReader readerR = File.OpenText(path))
                 {
-                    line = readerR.ReadLine();
-                    task.num_jobs_init++;
+                    task.num_jobs_init = 0;
+                    string line = readerR.ReadLine();
+                    string[] temp = line.Split('\t');
+                    task.num_users_init = temp.Length;
+                    while (line != null)
+                    {
+                        line = readerR.ReadLine();
+                        task.num_jobs_init++;
+                    }
+                    readerR.Close();
                 }
-                readerR.Close();
+                return true;
+            }
+            catch(Exception ex)
+            {
+                return false;
             }
         }
 
@@ -42,7 +50,15 @@ namespace recommenderSystems.Service.Plugin
         ///</remarks>
         public StreamWriter getResultStreamWriter()
         {
-            return new StreamWriter("results.txt");
+            try
+            {
+                return new StreamWriter("results.txt");
+                //return new StreamWriter(FILE_RESULTS);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         ///<summary>
@@ -53,7 +69,15 @@ namespace recommenderSystems.Service.Plugin
         ///</remarks>
         public StreamWriter getAverageStreamWriter()
         {
-            return new StreamWriter("averages.txt");
+            try
+            {
+                return new StreamWriter("averages.txt");
+                //return new StreamWriter(FILE_AVERAGES);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         ///<summary>
@@ -64,7 +88,15 @@ namespace recommenderSystems.Service.Plugin
         ///</remarks>
         public StreamWriter getIdandAvgStreamWriter()
         {
-            return new StreamWriter("IDandAVG.txt");
+            try
+            {
+                return new StreamWriter("IDandAVG.txt");
+                //return new StreamWriter(FILE_ID_AND_AVERAGES);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
 
@@ -76,401 +108,499 @@ namespace recommenderSystems.Service.Plugin
         ///</remarks>
         public StreamWriter getDifficultyStreamWriter()
         {
-            return new StreamWriter("difficulty.txt");
+            try
+            {
+                return new StreamWriter("difficulty.txt");
+                //return new StreamWriter(FILE_DIFFICULTY);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
 
         //Reads the file X to get the number of features
         public double[,] getNumberOfFeaturesX(String path, TaskDimensions task)
         {
-            task.num_features = 0;
-
-            using (TextReader readerX = File.OpenText(path))
+            try
             {
-                string line = readerX.ReadLine();
-                if (line != null)
-                {
-                    string[] temp = line.Split('\t');
-                    task.num_features = temp.Length;
-                }
-                readerX.Close();
-            }
+                task.num_features = 0;
 
-            //allocating the X matriz
-            return new double[task.num_jobs_init, task.num_features];
+                using (TextReader readerX = File.OpenText(path))
+                {
+                    string line = readerX.ReadLine();
+                    if (line != null)
+                    {
+                        string[] temp = line.Split('\t');
+                        task.num_features = temp.Length;
+                    }
+                    readerX.Close();
+                }
+
+                //allocating the X matriz
+                return new double[task.num_jobs_init, task.num_features];
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         //Reads the binary rating for the Features for each one of the Jobs
-        public void readFeaturesX(double[,] X, String path, TaskDimensions task)
+        public bool readFeaturesX(double[,] X, String path, TaskDimensions task)
         {
-            //reading X
-            using (TextReader readerX = File.OpenText(path))
+            try
             {
-                int i = 0;
-                string line = readerX.ReadLine();
-                while (line != null)
+                //reading X
+                using (TextReader readerX = File.OpenText(path))
                 {
-                    string[] temp = line.Split('\t');
-                    for (int j = 0; j < task.num_features; j++)
+                    int i = 0;
+                    string line = readerX.ReadLine();
+                    while (line != null)
                     {
-                        X[i, j] = Convert.ToDouble(temp[j]);
+                        string[] temp = line.Split('\t');
+                        for (int j = 0; j < task.num_features; j++)
+                        {
+                            X[i, j] = Convert.ToDouble(temp[j]);
+                        }
+                        line = readerX.ReadLine();
+                        i++;
                     }
-                    line = readerX.ReadLine();
-                    i++;
+                    readerX.Close();
                 }
-                readerX.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
 
         //Reads the file job _list to get the name of the Jobs
         public String[] readJobNames(String path, TaskDimensions task)
         {
-            string[] job_list = new string[task.num_jobs_init];
-            using (TextReader reader_job_list = File.OpenText(path))
+            try
             {
-                string line = reader_job_list.ReadLine();
-                int i = 0;
-                while (line != null)
+                string[] job_list = new string[task.num_jobs_init];
+                using (TextReader reader_job_list = File.OpenText(path))
                 {
-                    job_list[i] = line;
-                    line = reader_job_list.ReadLine();
-                    i++;
+                    string line = reader_job_list.ReadLine();
+                    int i = 0;
+                    while (line != null)
+                    {
+                        job_list[i] = line;
+                        line = reader_job_list.ReadLine();
+                        i++;
+                    }
+                    reader_job_list.Close();
                 }
-                reader_job_list.Close();
+                return job_list;
             }
-            return job_list;
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         //Reads the file job _list to get the name of the Jobs
         public UserProfile[] readUserProfile(String path, TaskDimensions task)
         {
-            UserProfile[] users = new UserProfile[task.num_users_init];
-            using (TextReader reader_users_list = File.OpenText(path))
+            try
             {
-                string line = reader_users_list.ReadLine();
-                int i = 0;
-                while (line != null)
+                UserProfile[] users = new UserProfile[task.num_users_init];
+                using (TextReader reader_users_list = File.OpenText(path))
                 {
-                    string[] temp = line.Split('\t');
-                    users[i] = new UserProfile(temp[0], Convert.ToDouble(temp[1]));
-                    line = reader_users_list.ReadLine();
-                    i++;
+                    string line = reader_users_list.ReadLine();
+                    int i = 0;
+                    while (line != null)
+                    {
+                        string[] temp = line.Split('\t');
+                        users[i] = new UserProfile(temp[0], Convert.ToDouble(temp[1]));
+                        line = reader_users_list.ReadLine();
+                        i++;
+                    }
+                    reader_users_list.Close();
                 }
-                reader_users_list.Close();
+                return users;
             }
-            return users;
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
 
         //Reads the file Y to fill out the matrix
         public double[,] readTrainingY(String path, TaskDimensions task, double[,] my_ratings, int user_number)
         {
-            //Now we allocate R (num_users_init - 1 because the chosen user was removed from the matrix)
-            double[,] Y = new double[task.num_jobs_init, task.num_users_init - 1];
-
-            using (TextReader readerY = File.OpenText(path))
+            try
             {
-                int i = 0;
-                string line = readerY.ReadLine();
-                while (line != null)
+                //Now we allocate R (num_users_init - 1 because the chosen user was removed from the matrix)
+                double[,] Y = new double[task.num_jobs_init, task.num_users_init - 1];
+
+                using (TextReader readerY = File.OpenText(path))
                 {
-                    string[] temp = line.Split('\t');
-                    int k = 0;
-                    for (int j = 0; j < task.num_users_init; j++)
+                    int i = 0;
+                    string line = readerY.ReadLine();
+                    while (line != null)
                     {
-                        if (j != (user_number - 1))
+                        string[] temp = line.Split('\t');
+                        int k = 0;
+                        for (int j = 0; j < task.num_users_init; j++)
                         {
-                            Y[i, k] = Convert.ToDouble(temp[j]);
-                            k++;
+                            if (j != (user_number - 1))
+                            {
+                                Y[i, k] = Convert.ToDouble(temp[j]);
+                                k++;
+                            }
+                            else
+                                my_ratings[i, 0] = Convert.ToDouble(temp[j]);
                         }
-                        else
-                            my_ratings[i, 0] = Convert.ToDouble(temp[j]);
+                        line = readerY.ReadLine();
+                        i++;
                     }
-                    line = readerY.ReadLine();
-                    i++;
+                    readerY.Close();
                 }
-                readerY.Close();
+                return Y;
             }
-            return Y;
+            catch (Exception ex)
+            {
+                return null;
+            }
+
         }
 
         //Reads the file R to fill out the matrix
         public double[,] readTrainingR(String path, TaskDimensions task, int user_number)
         {
-            //Now we allocate R (num_users_init - 1 because the chosen user was removed from the matrix)
-            double[,] R = new double[task.num_jobs_init, task.num_users_init - 1];
-
-            using (TextReader readerR = File.OpenText(path))
+            try
             {
-                int i = 0;
-                string line = readerR.ReadLine();
-                while (line != null)
+                //Now we allocate R (num_users_init - 1 because the chosen user was removed from the matrix)
+                double[,] R = new double[task.num_jobs_init, task.num_users_init - 1];
+
+                using (TextReader readerR = File.OpenText(path))
                 {
-                    string[] temp = line.Split('\t');
-                    int k = 0;
-                    for (int j = 0; j < task.num_users_init; j++)
+                    int i = 0;
+                    string line = readerR.ReadLine();
+                    while (line != null)
                     {
-                        if (j != (user_number - 1))
+                        string[] temp = line.Split('\t');
+                        int k = 0;
+                        for (int j = 0; j < task.num_users_init; j++)
                         {
-                            R[i, k] = Convert.ToDouble(temp[j]);
-                            k++;
+                            if (j != (user_number - 1))
+                            {
+                                R[i, k] = Convert.ToDouble(temp[j]);
+                                k++;
+                            }
                         }
+                        line = readerR.ReadLine();
+                        i++;
                     }
-                    line = readerR.ReadLine();
-                    i++;
+                    readerR.Close();
                 }
-                readerR.Close();
+                return R;
             }
-            return R;
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         //For each one of the users, writes values to a file, and return a list containg all the comparassions between the top ten 
         //jobs for him, and the other jobs (that had similarity >= 70%)
         public List<TopJobData> writeValuesToFile(StreamWriter writeText, object[] res, String[] job_list, int user_number, double[,] X)
         {
-            int len = ((double[,])res[0]).Length;
-
-            
-            List<TopJobData> mylist = new List<TopJobData>();
-            TopJobData aux;
-
-
-            for (int i = 0; i < len; i++)
+            try
             {
-                //adding a new element in the list for each user.
-                aux = new TopJobData(job_list[(int)(((double[,])res[0])[i, 0]) - 1], 
-                    (((double[,])res[1])[i, 0]), 
-                    job_list[(int)(((double[,])res[2])[i, 0]) - 1],
-                    X[(int)(((double[,])res[2])[i, 0]) - 1, 0],
-                    (((double[,])res[3])[i, 0]), 
-                    (((double[,])res[4])[i, 0]));
-                mylist.Add(aux);
 
-                writeText.Write(job_list[(int)(((double[,])res[0])[i, 0]) - 1] + "\t");
-                writeText.Write((((double[,])res[1])[i, 0]) + "\t");
-                writeText.Write(job_list[(int)(((double[,])res[2])[i, 0]) - 1] + "\t");
-                writeText.Write(X[(int)(((double[,])res[2])[i, 0]) - 1, 0] + "\t");
-                writeText.Write((((double[,])res[3])[i, 0]) + "\t");
-                writeText.Write((((double[,])res[4])[i, 0]) + "\t");
-                writeText.Write(user_number + "\n");
+                int len = ((double[,])res[0]).Length;
+
+
+                List<TopJobData> mylist = new List<TopJobData>();
+                TopJobData aux;
+
+
+                for (int i = 0; i < len; i++)
+                {
+                    //adding a new element in the list for each user.
+                    aux = new TopJobData(job_list[(int)(((double[,])res[0])[i, 0]) - 1],
+                        (((double[,])res[1])[i, 0]),
+                        job_list[(int)(((double[,])res[2])[i, 0]) - 1],
+                        X[(int)(((double[,])res[2])[i, 0]) - 1, 0],
+                        (((double[,])res[3])[i, 0]),
+                        (((double[,])res[4])[i, 0]));
+                    mylist.Add(aux);
+
+                    writeText.Write(job_list[(int)(((double[,])res[0])[i, 0]) - 1] + "\t");
+                    writeText.Write((((double[,])res[1])[i, 0]) + "\t");
+                    writeText.Write(job_list[(int)(((double[,])res[2])[i, 0]) - 1] + "\t");
+                    writeText.Write(X[(int)(((double[,])res[2])[i, 0]) - 1, 0] + "\t");
+                    writeText.Write((((double[,])res[3])[i, 0]) + "\t");
+                    writeText.Write((((double[,])res[4])[i, 0]) + "\t");
+                    writeText.Write(user_number + "\n");
+                }
+
+                return mylist;
             }
-
-            return mylist;
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         //For each one of the users, writes averages analysis to a file. Everything has 2 decimal places (ToString("N2")).
-        public void writeAveragesToFile(DataResult result, StreamWriter writeText, UserProfile user)
+        public bool writeAveragesToFile(DataResult result, StreamWriter writeText, UserProfile user)
         {
-            writeText.WriteLine("USER: " + user.UserID + " with rating:\t" + user.UserRating);
-            for (int k = 0; k < result.Number_top_jobs; k++)
+            try
             {
-                writeText.WriteLine("Job " + result.TopJobNames[k] + "\t" + result.TopJobDiff[k].ToString("N2") + "\t" +
-                        result.Mylist.ElementAt(k).PredRecJob.ToString("N2") + "\t" + result.Rating_average[k].ToString("N2") + "\t" +
-                        result.Percentage_average[k].ToString("N2") + "\t" + result.SimilarJobsDifficulty[k].ToString("N2"));
+                writeText.WriteLine("USER: " + user.UserID + " with rating:\t" + user.UserRating);
+                for (int k = 0; k < result.Number_top_jobs; k++)
+                {
+                    writeText.WriteLine("Job " + result.TopJobNames[k] + "\t" + result.TopJobDiff[k].ToString("N2") + "\t" +
+                            result.Mylist.ElementAt(k).PredRecJob.ToString("N2") + "\t" + result.Rating_average[k].ToString("N2") + "\t" +
+                            result.Percentage_average[k].ToString("N2") + "\t" + result.SimilarJobsDifficulty[k].ToString("N2"));
+                }
+                writeText.WriteLine("RATING AVGS TOTAL\t" + result.Rating_total_avg.ToString("N2"));
+                writeText.WriteLine("PERCENTAGE AVGS TOTAL\t" + result.Percentage_total_avg.ToString("N2"));
+                writeText.WriteLine("JOB DIFFICULTY AVGS TOTAL\t" + result.Avg_topJobDiff.ToString("N2"));
+                writeText.WriteLine("SIMILAR JOBS DIFFICULTY AVGS TOTAL\t" + result.Avg_similarJobsDifficulty.ToString("N2"));
+                writeText.WriteLine("SELF INACCURACY\t" + result.Self_inaccuracy.ToString("N2") + "\n");
+
+                return true;
             }
-            writeText.WriteLine("RATING AVGS TOTAL\t" + result.Rating_total_avg.ToString("N2"));
-            writeText.WriteLine("PERCENTAGE AVGS TOTAL\t" + result.Percentage_total_avg.ToString("N2"));
-            writeText.WriteLine("JOB DIFFICULTY AVGS TOTAL\t" + result.Avg_topJobDiff.ToString("N2"));
-            writeText.WriteLine("SIMILAR JOBS DIFFICULTY AVGS TOTAL\t" + result.Avg_similarJobsDifficulty.ToString("N2"));
-            writeText.WriteLine("SELF INACCURACY\t"+ result.Self_inaccuracy.ToString("N2") + "\n");
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         //This method writes global pieces of information about the averages for all users in the same averages file 
-        public void writeGlobalAveragesInformation(double total_rating_avg_systemm, double total_similarity_avg_system,
+        public bool writeGlobalAveragesInformation(double total_rating_avg_systemm, double total_similarity_avg_system,
             double total_inaccuracy_system, TaskDimensions task, 
             StreamWriter writeText, UserProfile[] user, double[] users_calculated_raitings)
         {
-            double avg_self_rating = 0;
-            int numOverTotal = 0, numActualyTotal = 0, numUnderTotal = 0;
-            int numOverEstimated1 = 0, numActualy1 = 0, numUnderEstimated1 = 0;
-            int numOverEstimated2 = 0, numActualy2 = 0, numUnderEstimated2 = 0;
-            int numOverEstimated3 = 0, numActualy3 = 0, numUnderEstimated3 = 0;
-            int numOverEstimated4 = 0, numActualy4 = 0, numUnderEstimated4 = 0; 
-            int numOverEstimated5 = 0, numActualy5 = 0, numUnderEstimated5 = 0;
-            int num1 = 0, num2 = 0, num3 = 0, num4 = 0, num5 = 0;
-            int num1_after = 0, num2_after = 0, num3_after = 0, num4_after = 0, num5_after = 0;
-            for (int i = 0; i < task.num_users_init; i++)
+            try
             {
-                avg_self_rating += user[i].UserRating;
-                switch ((int)user[i].UserRating)
+                double avg_self_rating = 0;
+                int numOverTotal = 0, numActualyTotal = 0, numUnderTotal = 0;
+                int numOverEstimated1 = 0, numActualy1 = 0, numUnderEstimated1 = 0;
+                int numOverEstimated2 = 0, numActualy2 = 0, numUnderEstimated2 = 0;
+                int numOverEstimated3 = 0, numActualy3 = 0, numUnderEstimated3 = 0;
+                int numOverEstimated4 = 0, numActualy4 = 0, numUnderEstimated4 = 0;
+                int numOverEstimated5 = 0, numActualy5 = 0, numUnderEstimated5 = 0;
+                int num1 = 0, num2 = 0, num3 = 0, num4 = 0, num5 = 0;
+                int num1_after = 0, num2_after = 0, num3_after = 0, num4_after = 0, num5_after = 0;
+                for (int i = 0; i < task.num_users_init; i++)
                 {
-                    case 1:
-                        num1++;
-                        if ((int)Math.Round(users_calculated_raitings[i], 0) == 1)
-                        {
-                            numActualy1++;
-                            numActualyTotal++;
-                        }
-                        else
-                        {
-                            numUnderEstimated1++;
-                            numUnderTotal++;
-                        }
-                        break;
-                    case 2:
-                        num2++;
-                        if ((int)Math.Round(users_calculated_raitings[i], 0) < 2)
-                        {
-                            numOverEstimated2++;
-                            numOverTotal++;
-                        }
-                        else if ((int)Math.Round(users_calculated_raitings[i], 0) == 2)
-                        {
-                            numActualy2++;
-                            numActualyTotal++;
-                        }
-                        else
-                        {
-                            numUnderEstimated2++;
-                            numUnderTotal++;
-                        }
-                        break;
-                    case 3:
-                        num3++;
-                        if ((int)Math.Round(users_calculated_raitings[i], 0) < 3)
-                        {
-                            numOverEstimated3++;
-                            numOverTotal++;
-                        }
-                        else if ((int)Math.Round(users_calculated_raitings[i], 0) == 3)
-                        {
-                            numActualyTotal++;
-                            numActualy3++;
-                        }
-                        else
-                        {
-                            numUnderEstimated3++;
-                            numUnderTotal++;
-                        }
-                        break;
-                    case 4:
-                        num4++;
-                        if ((int)Math.Round(users_calculated_raitings[i], 0) < 4)
-                        {
-                            numOverEstimated4++;
-                            numOverTotal++;
-                        }
-                        else if ((int)Math.Round(users_calculated_raitings[i], 0) == 4)
-                        {
-                            numActualy4++;
-                            numActualyTotal++;
-                        }
-                        else
-                        {
-                            numUnderEstimated4++;
-                            numUnderTotal++;
-                        }
-                        break;
-                    default:
-                        num5++;
-                        if ((int)Math.Round(users_calculated_raitings[i], 0) < 5)
-                        {
-                            numOverEstimated5++;
-                            numOverTotal++;
-                        }
-                        else
-                        {
-                            numActualy5++;
-                            numActualyTotal++;
-                        }
-                        break;
+                    avg_self_rating += user[i].UserRating;
+                    switch ((int)user[i].UserRating)
+                    {
+                        case 1:
+                            num1++;
+                            if ((int)Math.Round(users_calculated_raitings[i], 0) == 1)
+                            {
+                                numActualy1++;
+                                numActualyTotal++;
+                            }
+                            else
+                            {
+                                numUnderEstimated1++;
+                                numUnderTotal++;
+                            }
+                            break;
+                        case 2:
+                            num2++;
+                            if ((int)Math.Round(users_calculated_raitings[i], 0) < 2)
+                            {
+                                numOverEstimated2++;
+                                numOverTotal++;
+                            }
+                            else if ((int)Math.Round(users_calculated_raitings[i], 0) == 2)
+                            {
+                                numActualy2++;
+                                numActualyTotal++;
+                            }
+                            else
+                            {
+                                numUnderEstimated2++;
+                                numUnderTotal++;
+                            }
+                            break;
+                        case 3:
+                            num3++;
+                            if ((int)Math.Round(users_calculated_raitings[i], 0) < 3)
+                            {
+                                numOverEstimated3++;
+                                numOverTotal++;
+                            }
+                            else if ((int)Math.Round(users_calculated_raitings[i], 0) == 3)
+                            {
+                                numActualyTotal++;
+                                numActualy3++;
+                            }
+                            else
+                            {
+                                numUnderEstimated3++;
+                                numUnderTotal++;
+                            }
+                            break;
+                        case 4:
+                            num4++;
+                            if ((int)Math.Round(users_calculated_raitings[i], 0) < 4)
+                            {
+                                numOverEstimated4++;
+                                numOverTotal++;
+                            }
+                            else if ((int)Math.Round(users_calculated_raitings[i], 0) == 4)
+                            {
+                                numActualy4++;
+                                numActualyTotal++;
+                            }
+                            else
+                            {
+                                numUnderEstimated4++;
+                                numUnderTotal++;
+                            }
+                            break;
+                        default:
+                            num5++;
+                            if ((int)Math.Round(users_calculated_raitings[i], 0) < 5)
+                            {
+                                numOverEstimated5++;
+                                numOverTotal++;
+                            }
+                            else
+                            {
+                                numActualy5++;
+                                numActualyTotal++;
+                            }
+                            break;
+                    }
+                    switch ((int)Math.Round(users_calculated_raitings[i], 0))
+                    {
+                        case 1:
+                            num1_after++;
+                            break;
+                        case 2:
+                            num2_after++;
+                            break;
+                        case 3:
+                            num3_after++;
+                            break;
+                        case 4:
+                            num4_after++;
+                            break;
+                        default:
+                            num5_after++;
+                            break;
+                    }
                 }
-                switch ((int)Math.Round(users_calculated_raitings[i], 0))
-                {
-                    case 1:
-                        num1_after++;
-                        break;
-                    case 2:
-                        num2_after++;
-                        break;
-                    case 3:
-                        num3_after++;
-                        break;
-                    case 4:
-                        num4_after++;
-                        break;
-                    default:
-                        num5_after++;
-                        break;
-                }
+
+                avg_self_rating /= task.num_users_init;
+
+                writeText.WriteLine("Avgs total (ratings)\t" + total_rating_avg_systemm);
+                writeText.WriteLine("Avgs total (self rating)\t" + avg_self_rating);
+                writeText.WriteLine("Avgs total (similarity)\t" + total_similarity_avg_system);
+                writeText.WriteLine("Community inaccuracy\t" + total_inaccuracy_system + "\n");
+                writeText.WriteLine("Number of users that underestimated themselves\t" + numUnderTotal);
+                writeText.WriteLine("Number of users that right estimated about themselves\t" + numActualyTotal);
+                writeText.WriteLine("Number of users that overestimated themselves\t" + numOverTotal + "\n");
+
+                writeText.WriteLine("Number of self ratings (before calculation)");
+                writeText.WriteLine("amount of 1:\t" + num1);
+                writeText.WriteLine("amount of 2:\t" + num2);
+                writeText.WriteLine("amount of 3:\t" + num3);
+                writeText.WriteLine("amount of 4:\t" + num4);
+                writeText.WriteLine("amount of 5:\t" + num5);
+
+                writeText.WriteLine("\nNumber of self ratings (after calculation)");
+                writeText.WriteLine("amount of 1:\t" + num1_after);
+                writeText.WriteLine("amount of 2:\t" + num2_after);
+                writeText.WriteLine("amount of 3:\t" + num3_after);
+                writeText.WriteLine("amount of 4:\t" + num4_after);
+                writeText.WriteLine("amount of 5:\t" + num5_after);
+
+                this.underAndOverEstimations(writeText, 1, num1, numOverEstimated1, numActualy1, numUnderEstimated1);
+                this.underAndOverEstimations(writeText, 2, num2, numOverEstimated2, numActualy2, numUnderEstimated2);
+                this.underAndOverEstimations(writeText, 3, num3, numOverEstimated3, numActualy3, numUnderEstimated3);
+                this.underAndOverEstimations(writeText, 4, num4, numOverEstimated4, numActualy4, numUnderEstimated4);
+                this.underAndOverEstimations(writeText, 5, num5, numOverEstimated5, numActualy5, numUnderEstimated5);
+
+                return true;
             }
-
-            avg_self_rating /= task.num_users_init;
-
-            writeText.WriteLine("Avgs total (ratings)\t" + total_rating_avg_systemm);
-            writeText.WriteLine("Avgs total (self rating)\t" + avg_self_rating);
-            writeText.WriteLine("Avgs total (similarity)\t" + total_similarity_avg_system);
-            writeText.WriteLine("Community inaccuracy\t" + total_inaccuracy_system + "\n");
-            writeText.WriteLine("Number of users that underestimated themselves\t" + numUnderTotal);
-            writeText.WriteLine("Number of users that right estimated about themselves\t" + numActualyTotal);
-            writeText.WriteLine("Number of users that overestimated themselves\t" + numOverTotal + "\n");
-
-            writeText.WriteLine("Number of self ratings (before calculation)");
-            writeText.WriteLine("amount of 1:\t" + num1);
-            writeText.WriteLine("amount of 2:\t" + num2);
-            writeText.WriteLine("amount of 3:\t" + num3);
-            writeText.WriteLine("amount of 4:\t" + num4);
-            writeText.WriteLine("amount of 5:\t" + num5);
-
-            writeText.WriteLine("\nNumber of self ratings (after calculation)");
-            writeText.WriteLine("amount of 1:\t" + num1_after);
-            writeText.WriteLine("amount of 2:\t" + num2_after);
-            writeText.WriteLine("amount of 3:\t" + num3_after);
-            writeText.WriteLine("amount of 4:\t" + num4_after);
-            writeText.WriteLine("amount of 5:\t" + num5_after);
-
-            this.underAndOverEstimations(writeText, 1, num1, numOverEstimated1, numActualy1, numUnderEstimated1);
-            this.underAndOverEstimations(writeText, 2, num2, numOverEstimated2, numActualy2, numUnderEstimated2);
-            this.underAndOverEstimations(writeText, 3, num3, numOverEstimated3, numActualy3, numUnderEstimated3);
-            this.underAndOverEstimations(writeText, 4, num4, numOverEstimated4, numActualy4, numUnderEstimated4);
-            this.underAndOverEstimations(writeText, 5, num5, numOverEstimated5, numActualy5, numUnderEstimated5);
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         //just write information in the average file
-        public void underAndOverEstimations(StreamWriter writeText, int id, int num, int numOverEstimated, int numActualy, int numUnderEstimated)
+        public bool underAndOverEstimations(StreamWriter writeText, int id, int num, int numOverEstimated, int numActualy, int numUnderEstimated)
         {
-            writeText.WriteLine("\nFor the people who rated themselves as " + id + " (" + num + ")");
-            writeText.WriteLine("amount of those who overestimated themselves were:\t" + numOverEstimated);
-            writeText.WriteLine("amount of those who estimated themselves correctly were:\t" + numActualy);
-            writeText.WriteLine("amount of those who underestimated themselves were:\t" + numUnderEstimated);
+            try
+            {
+                writeText.WriteLine("\nFor the people who rated themselves as " + id + " (" + num + ")");
+                writeText.WriteLine("amount of those who overestimated themselves were:\t" + numOverEstimated);
+                writeText.WriteLine("amount of those who estimated themselves correctly were:\t" + numActualy);
+                writeText.WriteLine("amount of those who underestimated themselves were:\t" + numUnderEstimated);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         //just write information in the difficult file
-        public void writeDifficultyToFile(StreamWriter writeText, DataResult avgs)
+        public bool writeDifficultyToFile(StreamWriter writeText, DataResult avgs)
         {
-            writeText.WriteLine(avgs.Avg_topJobDiff + "\t" + avgs.Avg_similarJobsDifficulty + "\t" + avgs.User_profile.UserRating + "\t" + avgs.Rating_total_avg);
+            try
+            {
+                writeText.WriteLine(avgs.Avg_topJobDiff + "\t" + avgs.Avg_similarJobsDifficulty + "\t" + avgs.User_profile.UserRating + "\t" + avgs.Rating_total_avg);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
 
         //Reads the file Y to fill out the matrix
         public double[,] readFullY(String path, TaskDimensions task)
         {
-            //Now we allocate R (num_users_init - 1 because the chosen user was removed from the matrix)
-            double[,] Y = new double[task.num_jobs_init, task.num_users_init];
-
-            using (TextReader readerY = File.OpenText(path))
+            try
             {
-                int i = 0;
-                string line = readerY.ReadLine();
-                while (line != null)
+                //Now we allocate R (num_users_init - 1 because the chosen user was removed from the matrix)
+                double[,] Y = new double[task.num_jobs_init, task.num_users_init];
+
+                using (TextReader readerY = File.OpenText(path))
                 {
-                    string[] temp = line.Split('\t');
-                    int k = 0;
-                    for (int j = 0; j < task.num_users_init; j++)
+                    int i = 0;
+                    string line = readerY.ReadLine();
+                    while (line != null)
                     {
-                        Y[i, k] = Convert.ToDouble(temp[j]);
-                        k++;
-                        
+                        string[] temp = line.Split('\t');
+                        int k = 0;
+                        for (int j = 0; j < task.num_users_init; j++)
+                        {
+                            Y[i, k] = Convert.ToDouble(temp[j]);
+                            k++;
+
+                        }
+                        line = readerY.ReadLine();
+                        i++;
                     }
-                    line = readerY.ReadLine();
-                    i++;
+                    readerY.Close();
                 }
-                readerY.Close();
+                return Y;
             }
-            return Y;
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
-
-
-
     }
 }
