@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -43,11 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\BusinessManager.cs" />
+    <Compile Include="Business\DriverFileManager.cs" />
+    <Compile Include="Business\DriverWebManager.cs" />
+    <Compile Include="Business\ElasticManager.cs" />
     <Compile Include="DataResult.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Domain\TaskDimensions.cs" />
     <Compile Include="DriverWeb.cs" />
+    <Compile Include="Exceptions\Business\BusinessValidationException.cs" />
+    <Compile Include="Exceptions\Service\ServiceLoadException.cs" />
     <Compile Include="FromWebToFile.cs" />
     <Compile Include="Service References\ElasticService\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -64,9 +71,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service\Factory.cs" />
     <Compile Include="Service\Interface\IElasticSvc.cs" />
     <Compile Include="Service\Interface\IJobSvc.cs" />
     <Compile Include="Service\Interface\IRecruiteeSvc.cs" />
+    <Compile Include="Service\Interface\IService.cs" />
     <Compile Include="Service\Plugin\ElasticSvcImpl.cs" />
     <Compile Include="Service\Plugin\JobSvcImpl.cs" />
     <Compile Include="Service\Plugin\RecruiteeSvcImpl.cs" />
@@ -321,9 +330,7 @@
     <WCFMetadataStorage Include="Service References\JobService\" />
     <WCFMetadataStorage Include="Service References\RecruiteeService\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Business\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

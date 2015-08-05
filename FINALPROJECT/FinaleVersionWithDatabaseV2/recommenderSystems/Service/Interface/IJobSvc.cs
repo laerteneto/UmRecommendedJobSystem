@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace recommenderSystems.Service.Interface
 {
-    interface IJobSvc
+    public interface IJobSvc : IService
     {
         string[] selectExpressionNames();
         double[] selectExpressionDifficulty();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace recommenderSystems.Service.Interface
 {
-    interface IRecruiteeSvc
+    public interface IRecruiteeSvc : IService
     {
         String[] selectRecruiteeNames();
         double[] selectRecruiteeSkills();

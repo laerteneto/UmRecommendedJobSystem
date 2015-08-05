@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace recommenderSystems.Service.Interface
 {
-    public interface IFileSystemSvc
+    public interface IFileSystemSvc : IService
     {
         void detectSizeOfJobsColumns(TaskDimensions task, String path);
         double[,] getNumberOfFeaturesX(String path, TaskDimensions task);

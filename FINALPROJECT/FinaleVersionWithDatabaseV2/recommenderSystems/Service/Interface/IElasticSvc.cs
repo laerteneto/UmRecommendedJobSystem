@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace recommenderSystems.Service.Interface
 {
-    interface IElasticSvc
+    public interface IElasticSvc : IService
     {
         bool insertRecommenderJob(DataResult avgs);
-        double[,] SelectRatings(String[] expressions, UserProfile[] users);
-        void InsertRatings(String[] expressions, UserProfile[] users, double[,] Y);
+        bool insertRatings(String[] expressions, UserProfile[] users, double[,] Y);
+        int[,] getYIndex(String jobID, String recruiteeID, String[] expressions, UserProfile[] users);
+        double[,] selectRatings(String[] expressions, UserProfile[] users);
     }
 }
