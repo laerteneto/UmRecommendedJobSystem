@@ -43,6 +43,7 @@ namespace recommenderSystems.Service.Plugin
         public StreamWriter getResultStreamWriter()
         {
             return new StreamWriter("results.txt");
+            //return new StreamWriter(FILE_RESULTS);
         }
 
         ///<summary>
@@ -54,6 +55,7 @@ namespace recommenderSystems.Service.Plugin
         public StreamWriter getAverageStreamWriter()
         {
             return new StreamWriter("averages.txt");
+            //return new StreamWriter(FILE_AVERAGES);
         }
 
         ///<summary>
@@ -65,6 +67,7 @@ namespace recommenderSystems.Service.Plugin
         public StreamWriter getIdandAvgStreamWriter()
         {
             return new StreamWriter("IDandAVG.txt");
+            //return new StreamWriter(FILE_ID_AVG);
         }
 
 
@@ -77,6 +80,7 @@ namespace recommenderSystems.Service.Plugin
         public StreamWriter getDifficultyStreamWriter()
         {
             return new StreamWriter("difficulty.txt");
+            //return new StreamWriter(FILE_DIFFICULTY);
         }
 
 
