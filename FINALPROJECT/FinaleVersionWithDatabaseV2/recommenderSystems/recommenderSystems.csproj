@@ -52,7 +52,7 @@
     <Compile Include="Business\FileSystemManager.cs" />
     <Compile Include="Business\MatLabManager.cs" />
     <Compile Include="Business\RecruiteeManager.cs" />
-    <Compile Include="DataResult.cs">
+    <Compile Include="Domain\DataResult.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Default.cs" />
@@ -83,13 +83,13 @@
     <Compile Include="Service\Plugin\ElasticSvcImpl.cs" />
     <Compile Include="Service\Plugin\JobSvcImpl.cs" />
     <Compile Include="Service\Plugin\RecruiteeSvcImpl.cs" />
-    <Compile Include="TopJobData.cs" />
+    <Compile Include="Domain\TopJobData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\Interface\IFileSystemSvc.cs" />
     <Compile Include="Service\Interface\IMatlabSvc.cs" />
     <Compile Include="Service\Plugin\FileSystemSvcImpl.cs" />
     <Compile Include="Service\Plugin\MatlabSvcImpl.cs" />
-    <Compile Include="UserProfile.cs" />
+    <Compile Include="Domain\UserProfile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

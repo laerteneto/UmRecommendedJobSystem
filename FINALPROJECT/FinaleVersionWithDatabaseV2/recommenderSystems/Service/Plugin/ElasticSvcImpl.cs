@@ -1,4 +1,5 @@
-﻿using recommenderSystems.Service.Interface;
+﻿using recommenderSystems.Domain;
+using recommenderSystems.Service.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using recommenderSystems.Exceptions.Service;
 using recommenderSystems.Service.Interface;
+using recommenderSystems.Domain;
 
 namespace recommenderSystems.Business
 {

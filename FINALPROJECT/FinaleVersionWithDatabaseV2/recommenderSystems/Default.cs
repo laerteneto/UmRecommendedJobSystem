@@ -11,11 +11,11 @@ namespace recommenderSystems
     {
         public static void Main(string[] args)
         {
-            //DriverWebManager driverWebMgr = new DriverWebManager();
-            //bool result = driverWebMgr.MainRoutine();
+            DriverWebManager driverWebMgr = new DriverWebManager();
+            bool result = driverWebMgr.MainRoutine();
 
-            DriverFileManager driverFileMgr = new DriverFileManager();
-            bool result2 = driverFileMgr.MainRoutine();
+            //DriverFileManager driverFileMgr = new DriverFileManager();
+            //bool result2 = driverFileMgr.MainRoutine();
         
         }
     }

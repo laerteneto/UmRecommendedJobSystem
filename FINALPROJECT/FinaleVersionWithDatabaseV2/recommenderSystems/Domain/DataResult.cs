@@ -7,7 +7,7 @@ using System.IO;
 using recommenderSystems.Service.Interface;
 using recommenderSystems.Service.Plugin;
 
-namespace recommenderSystems
+namespace recommenderSystems.Domain
 {
     public class DataResult
     {
