@@ -679,5 +679,9 @@ namespace recommenderSystems.Service.Plugin
                 return false;
             }
         }
+
+        public void readIDandAVG()
+        {
+        }
     }
 }

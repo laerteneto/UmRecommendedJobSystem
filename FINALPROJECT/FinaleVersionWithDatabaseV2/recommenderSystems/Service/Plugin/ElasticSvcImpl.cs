@@ -113,7 +113,11 @@ namespace recommenderSystems.Service.Plugin
             {
                 return null;
             }
+        }
 
+        public void updateRanking()
+        {
+            // call readIDandAVG
         }
     }
 }
