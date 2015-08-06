@@ -480,8 +480,55 @@ C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWith
 C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\obj\Debug\recommenderSystems.csproj.ResolveComReference.cache
 C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\obj\Debug\recommenderSystems.exe
 C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\obj\Debug\recommenderSystems.pdb
-C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\obj\Debug\recommenderSystems.csprojResolveAssemblyReference.cache
 C:\Users\gustavo\Documents\Visual Studio 2012\Projects\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\recommenderSystems.exe.config
 C:\Users\gustavo\Documents\Visual Studio 2012\Projects\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\obj\Debug\Interop.MLApp.dll
 C:\Users\gustavo\Documents\Visual Studio 2012\Projects\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\obj\Debug\recommenderSystems.csproj.ResolveComReference.cache
 C:\Users\gustavo\Documents\Visual Studio 2012\Projects\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\obj\Debug\recommenderSystems.exe
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\recommenderSystems.exe
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\recommenderSystems.pdb
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_R.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_R_11.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_R_21.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_R_31.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_R_41.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_R_53.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_User_table.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_User_table_11.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_User_table_21.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_User_table_31.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_User_table_41.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_User_table_53.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_Y.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_Y_11.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_Y_21.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_Y_31.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_Y_41.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\new_Y_53.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\X.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\matlab\cofiCostFunc.m
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\matlab\fmincg.m
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\matlab\manhattanDistance.m
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\matlab\normalizeRatings.m
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\matlab\one_by_one_analysis.m
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\matlab\Rated_jobs_Generator.m
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\matlab\scriptGeneration.m
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\expressions_old.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\R.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\R_10.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\R_20.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\R_30.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\R_40.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\user_table.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\user_table_10.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\user_table_20.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\user_table_30.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\user_table_40.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\X_old.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\Y.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\Y_10.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\Y_20.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\Y_30.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\Y_40.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\old\YandR.xlsx
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\bin\Debug\files\input\expressions.txt
+C:\Users\sadallo\Documents\UmRecommendedJobSystem\FINALPROJECT\FinaleVersionWithDatabaseV2\recommenderSystems\obj\Debug\recommenderSystems.csprojResolveAssemblyReference.cache

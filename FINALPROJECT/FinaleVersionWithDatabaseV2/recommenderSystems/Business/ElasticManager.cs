@@ -25,7 +25,7 @@ namespace recommenderSystems.Business
 
         }
 
-        public double[,] SelectRatings(String[] expressions, UserProfile[] users)
+        public double[,] selectRatings(String[] expressions, UserProfile[] users)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace recommenderSystems.Business
 
         }
 
-        public bool InsertRatings(String[] expressions, UserProfile[] users, double[,] Y)
+        public bool insertRatings(String[] expressions, UserProfile[] users, double[,] Y)
         {
             try
             {
@@ -53,12 +53,12 @@ namespace recommenderSystems.Business
 
         }
 
-        public int[,] GetYIndex(String jobID, String recruiteeID, String[] expressions, UserProfile[] users)
+        public int[,] getYIndex(String jobID, String recruiteeID, String[] expressions, UserProfile[] users)
         {
             try
             {
                 IElasticSvc svc = (IElasticSvc)this.getService(typeof(IElasticSvc).Name);
-                return svc.GetYIndex(jobID, recruiteeID, expressions, users);
+                return svc.getYIndex(jobID, recruiteeID, expressions, users);
             }
             catch (ServiceLoadException ex)
             {

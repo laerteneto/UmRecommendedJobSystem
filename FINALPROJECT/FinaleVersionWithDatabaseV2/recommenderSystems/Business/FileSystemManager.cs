@@ -235,6 +235,20 @@ namespace recommenderSystems.Business
             }
         }
 
+        public bool writeFiles(String[] job_list, double[,] new_X, UserProfile[] users_profile, double[,] Y)
+        {
+            try
+            {
+                IFileSystemSvc svc = (IFileSystemSvc)this.getService(typeof(IFileSystemSvc).Name);
+                return svc.writeFiles(job_list, new_X, users_profile, Y);
+            }
+            catch (ServiceLoadException ex)
+            {
+                return false;
+            }
+        }
+
+
 
     }
 }

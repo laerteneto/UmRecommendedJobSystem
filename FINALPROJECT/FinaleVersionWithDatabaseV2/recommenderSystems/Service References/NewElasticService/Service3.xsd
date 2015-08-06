@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/UMNewElasticWebsite.DomainDTO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UMNewElasticWebsite.DomainDTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://umdbms.no-ip.info/UMNewElasticWebsite/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfTaskDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaskDto" nillable="true" type="tns:TaskDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaskDto" nillable="true" type="tns:ArrayOfTaskDto" />
+  <xs:complexType name="TaskDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="JobId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Rating" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="RecruiteeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="TaskDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaskId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaskDto" nillable="true" type="tns:TaskDto" />
+  <xs:complexType name="ArrayOfTaskRatingDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaskRatingDTO" nillable="true" type="tns:TaskRatingDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaskRatingDTO" nillable="true" type="tns:ArrayOfTaskRatingDTO" />
+  <xs:complexType name="TaskRatingDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="JobId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Rating" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="RecruiteeId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaskRatingDTO" nillable="true" type="tns:TaskRatingDTO" />
+  <xs:complexType name="ArrayOfRecommendedJobDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RecommendedJobDto" nillable="true" type="tns:RecommendedJobDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRecommendedJobDto" nillable="true" type="tns:ArrayOfRecommendedJobDto" />
+  <xs:complexType name="RecommendedJobDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="JobId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PredictedRankingValue" type="xs:double" />
+      <xs:element minOccurs="0" name="RecruiteeId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RecommendedJobDto" nillable="true" type="tns:RecommendedJobDto" />
+</xs:schema>

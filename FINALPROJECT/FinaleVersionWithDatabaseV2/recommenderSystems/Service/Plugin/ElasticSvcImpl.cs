@@ -14,10 +14,10 @@ namespace recommenderSystems.Service.Plugin
             try
             {
                 bool flag = false;
-                ElasticService.ServiceWCFClient ws = new ElasticService.ServiceWCFClient();
+                NewElasticService.ServiceWCFClient ws = new NewElasticService.ServiceWCFClient();
                 for (int n = 0; n < avgs.Number_top_jobs; n++)
                 {
-                    ElasticService.RecommendedJobDto job = new ElasticService.RecommendedJobDto();
+                    NewElasticService.RecommendedJobDto job = new NewElasticService.RecommendedJobDto();
                     job.RecruiteeId = new Guid(avgs.User_profile.UserID);
                     job.JobId = new Guid(avgs.TopJobNames[n]);
                     job.PredictedRankingValue = avgs.Mylist.ElementAt(n).PredRecJob;
@@ -37,9 +37,9 @@ namespace recommenderSystems.Service.Plugin
         {
             try
             {
-                ElasticService.ServiceWCFClient svc = new ElasticService.ServiceWCFClient();
-                ElasticService.TaskDto[] tasks = svc.selectAllTask();
-                foreach (ElasticService.TaskDto task in tasks)
+                NewElasticService.ServiceWCFClient svc = new NewElasticService.ServiceWCFClient();
+                NewElasticService.TaskDto[] tasks = svc.selectAllTask();
+                foreach (NewElasticService.TaskDto task in tasks)
                 {
                     int[,] result = this.getYIndex(task.JobId.ToString(), task.RecruiteeId.ToString(), expressions, users);
                     task.Rating = Y[result[0, 0], result[0, 1]];
@@ -98,12 +98,12 @@ namespace recommenderSystems.Service.Plugin
             try
             {
                 double[,] Y = new double[expressions.Length, users.Length];
-                ElasticService.ServiceWCFClient svc = new ElasticService.ServiceWCFClient();
-                ElasticService.TaskRatingDTO[] tasks = svc.selectRatings();
+                NewElasticService.ServiceWCFClient svc = new NewElasticService.ServiceWCFClient();
+                NewElasticService.TaskRatingDTO[] tasks = svc.selectRatings();
 
-                foreach (ElasticService.TaskRatingDTO task in tasks)
+                foreach (NewElasticService.TaskRatingDTO task in tasks)
                 {
-                    int[,] result = this.GetYIndex(task.JobId.ToString(), task.RecruiteeId.ToString(), expressions, users);
+                    int[,] result = this.getYIndex(task.JobId.ToString(), task.RecruiteeId.ToString(), expressions, users);
                     Y[result[0, 0], result[0, 1]] = (double)task.Rating;
                 }
                 return Y;

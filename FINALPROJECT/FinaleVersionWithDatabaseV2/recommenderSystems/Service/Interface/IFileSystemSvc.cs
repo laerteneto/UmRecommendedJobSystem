@@ -29,5 +29,7 @@ namespace recommenderSystems.Service.Interface
         UserProfile[] readUserProfile(String path, TaskDimensions task);
         bool writeDifficultyToFile(StreamWriter writeText, DataResult avgs);
         double[,] readFullY(String path, TaskDimensions task);
+        bool writeFiles(String[] job_list, double[,] new_X, UserProfile[] users_profile, double[,] Y);
+
     }
 }

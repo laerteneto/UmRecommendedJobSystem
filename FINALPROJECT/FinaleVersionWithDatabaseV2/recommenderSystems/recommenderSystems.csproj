@@ -50,20 +50,22 @@
     <Compile Include="Business\DriverWebManager.cs" />
     <Compile Include="Business\ElasticManager.cs" />
     <Compile Include="Business\FileSystemManager.cs" />
+    <Compile Include="Business\MatLabManager.cs" />
+    <Compile Include="Business\RecruiteeManager.cs" />
     <Compile Include="DataResult.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Default.cs" />
+    <Compile Include="DirectoryPaths.cs" />
     <Compile Include="Domain\TaskDimensions.cs" />
-    <Compile Include="DriverWeb.cs" />
     <Compile Include="Exceptions\Business\BusinessValidationException.cs" />
     <Compile Include="Exceptions\Service\ServiceLoadException.cs" />
-    <Compile Include="FromWebToFile.cs" />
-    <Compile Include="Service References\ElasticService\Reference.cs">
+    <Compile Include="Service References\JobService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Service References\JobService\Reference.cs">
+    <Compile Include="Service References\NewElasticService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -91,57 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.AgeDto.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.EducationDto.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.IncomeDto.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.JobDto.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.RankingDto.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.RecommendedJobDto.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.RecruiteeDto.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.SkillDto.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.SkillDto1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.TaskDto.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ElasticService\recommenderSystems.ElasticService.TaskRatingDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ElasticService\Service.wsdl" />
-    <None Include="Service References\ElasticService\Service.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ElasticService\Service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ElasticService\Service2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ElasticService\Service3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ElasticService\Service4.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ElasticService\Service5.xsd">
-      <SubType>Designer</SubType>
+    <None Include="files\old\YandR.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Service References\JobService\recommenderSystems.JobService.CategoryDto.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -169,6 +122,55 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\JobService\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NewElasticService\recommenderSystems.NewElasticService.AgeDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NewElasticService\recommenderSystems.NewElasticService.EducationDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NewElasticService\recommenderSystems.NewElasticService.IncomeDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NewElasticService\recommenderSystems.NewElasticService.JobDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NewElasticService\recommenderSystems.NewElasticService.RankingDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NewElasticService\recommenderSystems.NewElasticService.RecommendedJobDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NewElasticService\recommenderSystems.NewElasticService.RecruiteeDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NewElasticService\recommenderSystems.NewElasticService.SkillDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NewElasticService\recommenderSystems.NewElasticService.SkillDto1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NewElasticService\recommenderSystems.NewElasticService.TaskDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NewElasticService\recommenderSystems.NewElasticService.TaskRatingDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\NewElasticService\Service.wsdl" />
+    <None Include="Service References\NewElasticService\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NewElasticService\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NewElasticService\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NewElasticService\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NewElasticService\Service4.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\RecruiteeService\recommenderSystems.RecruiteeService.AgeDto.datasource">
@@ -221,87 +223,145 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="files\cofiCostFunc.m">
+    <Content Include="files\input\expressions.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\expressions.txt">
+    <Content Include="files\input\new_R.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\fmincg.m">
+    <Content Include="files\input\new_R_11.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\manhattanDistance.m">
+    <Content Include="files\input\new_R_21.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_R.txt">
+    <Content Include="files\input\new_R_31.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_R_11.txt">
+    <Content Include="files\input\new_R_41.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_R_21.txt">
+    <Content Include="files\input\new_R_53.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_R_31.txt">
+    <Content Include="files\input\new_User_table.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_R_41.txt">
+    <Content Include="files\input\new_User_table_11.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_R_53.txt">
+    <Content Include="files\input\new_User_table_21.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_User_table.txt">
+    <Content Include="files\input\new_User_table_31.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_User_table_11.txt">
+    <Content Include="files\input\new_User_table_41.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_User_table_21.txt">
+    <Content Include="files\input\new_User_table_53.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_User_table_31.txt">
+    <Content Include="files\input\new_Y.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_User_table_41.txt">
+    <Content Include="files\input\new_Y_11.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_User_table_53.txt">
+    <Content Include="files\input\new_Y_21.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_Y.txt">
+    <Content Include="files\input\new_Y_31.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_Y_11.txt">
+    <Content Include="files\input\new_Y_41.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_Y_21.txt">
+    <Content Include="files\input\new_Y_53.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_Y_31.txt">
+    <Content Include="files\input\X.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_Y_41.txt">
+    <Content Include="files\matlab\cofiCostFunc.m">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\new_Y_53.txt">
+    <Content Include="files\matlab\fmincg.m">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\normalizeRatings.m">
+    <Content Include="files\matlab\manhattanDistance.m">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\one_by_one_analysis.m">
+    <Content Include="files\matlab\normalizeRatings.m">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\Rated_jobs_Generator.m">
+    <Content Include="files\matlab\one_by_one_analysis.m">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\scriptGeneration.m">
+    <Content Include="files\matlab\Rated_jobs_Generator.m">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="files\X.txt">
+    <Content Include="files\matlab\scriptGeneration.m">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="files\old\expressions_old.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\R.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\R_10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\R_20.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\R_30.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\R_40.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\user_table.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\user_table_10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\user_table_20.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\user_table_30.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\user_table_40.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\X_old.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\Y.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\Y_10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\Y_20.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\Y_30.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files\old\Y_40.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Service References\NewElasticService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\NewElasticService\configuration.svcinfo" />
+    <None Include="Service References\NewElasticService\configuration91.svcinfo" />
+    <None Include="Service References\NewElasticService\Service.disco" />
     <None Include="Service References\RecruiteeService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -309,13 +369,6 @@
     <None Include="Service References\RecruiteeService\configuration.svcinfo" />
     <None Include="Service References\RecruiteeService\configuration91.svcinfo" />
     <None Include="Service References\RecruiteeService\Service.disco" />
-    <None Include="Service References\ElasticService\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\ElasticService\configuration.svcinfo" />
-    <None Include="Service References\ElasticService\configuration91.svcinfo" />
-    <None Include="Service References\ElasticService\Service.disco" />
     <None Include="Service References\JobService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -328,8 +381,8 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\ElasticService\" />
     <WCFMetadataStorage Include="Service References\JobService\" />
+    <WCFMetadataStorage Include="Service References\NewElasticService\" />
     <WCFMetadataStorage Include="Service References\RecruiteeService\" />
   </ItemGroup>
   <ItemGroup />
