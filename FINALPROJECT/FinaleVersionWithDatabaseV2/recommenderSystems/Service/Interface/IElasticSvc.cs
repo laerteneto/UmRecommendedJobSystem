@@ -13,5 +13,7 @@ namespace recommenderSystems.Service.Interface
         bool insertRatings(String[] expressions, UserProfile[] users, double[,] Y);
         int[,] getYIndex(String jobID, String recruiteeID, String[] expressions, UserProfile[] users);
         double[,] selectRatings(String[] expressions, UserProfile[] users);
+        bool updateRanking(String path);
+
     }
 }

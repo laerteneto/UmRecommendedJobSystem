@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="PSTw+RTDQAfRRmLJ2MPKg+evqxE=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="Quh4sA4jI05T40KT9w7sBUUmYZA=">
   <bindingConfigurations>
-    <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IServiceWCF2">
+    <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IServiceWCF4">
       <properties>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>BasicHttpBinding_IServiceWCF2</serializedValue>
+          <serializedValue>BasicHttpBinding_IServiceWCF4</serializedValue>
         </property>
         <property path="/closeTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IServiceWCF2" contract="JobService.IServiceWCF" bindingType="basicHttpBinding" address="http://umdbms.no-ip.info/UMNewJobWebsite/Service.svc" bindingConfiguration="BasicHttpBinding_IServiceWCF2">
+    <endpoint name="BasicHttpBinding_IServiceWCF2" contract="NewRecruiteeService.IServiceWCF" bindingType="basicHttpBinding" address="http://umdbms.no-ip.info/UMNewRecruiteeWebsite/Service.svc" bindingConfiguration="BasicHttpBinding_IServiceWCF4">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://umdbms.no-ip.info/UMNewJobWebsite/Service.svc</serializedValue>
+          <serializedValue>http://umdbms.no-ip.info/UMNewRecruiteeWebsite/Service.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -124,10 +124,10 @@
           <serializedValue>basicHttpBinding</serializedValue>
         </property>
         <property path="/bindingConfiguration" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>BasicHttpBinding_IServiceWCF2</serializedValue>
+          <serializedValue>BasicHttpBinding_IServiceWCF4</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>JobService.IServiceWCF</serializedValue>
+          <serializedValue>NewRecruiteeService.IServiceWCF</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

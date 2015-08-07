@@ -68,6 +68,20 @@ namespace recommenderSystems.Business
 
         }
 
+        public bool updateRanking(String path)
+        {
+            try
+            {
+                IElasticSvc svc = (IElasticSvc)this.getService(typeof(IElasticSvc).Name);
+                return svc.updateRanking(path);
+            }
+            catch (ServiceLoadException ex)
+            {
+                return false;
+            }
+        }
+
+
 
     }
 }

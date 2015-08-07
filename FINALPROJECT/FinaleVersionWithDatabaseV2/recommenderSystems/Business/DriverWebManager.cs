@@ -142,6 +142,8 @@ namespace recommenderSystems.Business
                         ////used to insert recommended jobs for a user in the database
                         bool result = elaMgr.insertRecommenderJob(avgs);
                     }).Start();
+
+                    
                     
                     user_number++;
                 }
@@ -159,6 +161,14 @@ namespace recommenderSystems.Business
                 writeTextResult.Close();
                 writeTextAverages.Close();
                 writeTextDiff.Close();
+
+
+                new Thread(() =>
+                {
+                    Thread.CurrentThread.IsBackground = true;
+                    ////used to insert recommended jobs for a user in the database
+                    bool result = elaMgr.updateRanking(DirectoryPaths.FILE_ID_AVG);
+                }).Start();
 
 
                 Console.WriteLine("DONE");

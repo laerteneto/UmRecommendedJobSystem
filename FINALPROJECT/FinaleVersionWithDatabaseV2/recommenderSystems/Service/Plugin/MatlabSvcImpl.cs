@@ -9,12 +9,12 @@ namespace recommenderSystems.Service.Plugin
 {
     public class MatlabSvcImpl : IMatlabSvc
     {
-        public MLApp.MLApp matlab {get;set;}
+        public static MLApp.MLApp matlab = new MLApp.MLApp();
 
         //Create the MATLAB instance (reference)
         public MatlabSvcImpl()
         {
-            this.matlab = new MLApp.MLApp();
+            //this.matlab = new MLApp.MLApp();
             //this is used to do not show the matlab window
             //matlab.Visible = 0;
         }
@@ -24,7 +24,7 @@ namespace recommenderSystems.Service.Plugin
         {
             try
             {
-                this.matlab.Execute(@"cd " + path);
+                matlab.Execute(@"cd " + path);
                 return true;
             }
             catch (Exception ex)
@@ -44,7 +44,7 @@ namespace recommenderSystems.Service.Plugin
                 this.changeDirectory(path);
 
                 // Job recommendations script that will give as result 6 objects described in matlab
-                this.matlab.Feval("scriptGeneration", 6, out result_job_search, my_ratings, job_list, Y, R, X, task.num_features);
+                matlab.Feval("scriptGeneration", 6, out result_job_search, my_ratings, job_list, Y, R, X, task.num_features);
                 object[] res = result_job_search as object[];
 
                 return res;

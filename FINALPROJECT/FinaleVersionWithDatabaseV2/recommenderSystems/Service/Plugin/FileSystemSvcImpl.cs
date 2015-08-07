@@ -1,4 +1,5 @@
 ﻿using recommenderSystems.Domain;
+using recommenderSystems.NewRecruiteeService;
 using recommenderSystems.Service.Interface;
 using System;
 using System.Collections.Generic;
@@ -680,8 +681,33 @@ namespace recommenderSystems.Service.Plugin
             }
         }
 
-        public void readIDandAVG()
+        public List<RecruiteeDto> readIDandAVG(String path)
         {
+            try
+            {
+                //reading X
+                List<RecruiteeDto> list = new List<RecruiteeDto>();
+                using (TextReader readerX = File.OpenText(path))
+                {
+                    string line = readerX.ReadLine();
+                    while (line != null)
+                    {
+                        string[] temp = line.Split('\t');
+                        RecruiteeDto rec = new RecruiteeDto();
+                        rec.RecruiteeId = new Guid(temp[0]);
+                        rec.RankingValue = Convert.ToDouble(temp[1]);
+                        list.Add(rec);
+
+                        line = readerX.ReadLine();
+                    }
+                    readerX.Close();
+                }
+                return list;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }

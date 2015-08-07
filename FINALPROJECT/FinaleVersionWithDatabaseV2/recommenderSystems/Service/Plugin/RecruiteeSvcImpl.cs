@@ -14,7 +14,7 @@ namespace recommenderSystems.Service.Plugin
         {
             try
             {
-                RecruiteeService.ServiceWCFClient svc = new RecruiteeService.ServiceWCFClient();
+                NewRecruiteeService.ServiceWCFClient svc = new NewRecruiteeService.ServiceWCFClient();
                 Guid[] recNames = svc.selectRecruiteeNames();
                 return Array.ConvertAll(recNames, x => x.ToString());
             }
@@ -30,8 +30,8 @@ namespace recommenderSystems.Service.Plugin
             try
             {
 
-                RecruiteeService.ServiceWCFClient svc = new RecruiteeService.ServiceWCFClient();
-                RecruiteeService.RecruiteeSkillDto[] recSkills = svc.selectAllRecruiteeSkill();
+                NewRecruiteeService.ServiceWCFClient svc = new NewRecruiteeService.ServiceWCFClient();
+                NewRecruiteeService.RecruiteeSkillDto[] recSkills = svc.selectAllRecruiteeSkill();
                 double[] result = new double[recSkills.Length];
                 for (int n = 0; n < recSkills.Length; n++)
                 {

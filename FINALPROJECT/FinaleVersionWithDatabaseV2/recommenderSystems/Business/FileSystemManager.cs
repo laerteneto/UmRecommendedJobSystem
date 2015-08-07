@@ -7,6 +7,7 @@ using recommenderSystems.Exceptions.Service;
 using recommenderSystems.Service.Interface;
 using recommenderSystems.Domain;
 using System.IO;
+using recommenderSystems.NewRecruiteeService;
 
 
 namespace recommenderSystems.Business
@@ -247,6 +248,20 @@ namespace recommenderSystems.Business
                 return false;
             }
         }
+
+        public List<RecruiteeDto> readIDandAVG(String path)
+        {
+            try
+            {
+                IFileSystemSvc svc = (IFileSystemSvc)this.getService(typeof(IFileSystemSvc).Name);
+                return svc.readIDandAVG(path);
+            }
+            catch (ServiceLoadException ex)
+            {
+                return null;
+            }
+        }
+
 
 
 

@@ -14,7 +14,7 @@ namespace recommenderSystems.Service.Plugin
         {
             try
             {
-                JobService.ServiceWCFClient svc = new JobService.ServiceWCFClient();
+                NewJobService.ServiceWCFClient svc = new NewJobService.ServiceWCFClient();
                 Guid[] jobNames = svc.selectExpressionNames();
                 return Array.ConvertAll(jobNames, x => x.ToString());
             }
@@ -29,7 +29,7 @@ namespace recommenderSystems.Service.Plugin
         {
             try
             {
-                JobService.ServiceWCFClient svc = new JobService.ServiceWCFClient();
+                NewJobService.ServiceWCFClient svc = new NewJobService.ServiceWCFClient();
                 return svc.selectExpressionDifficulty();
             }
             catch (Exception ex)

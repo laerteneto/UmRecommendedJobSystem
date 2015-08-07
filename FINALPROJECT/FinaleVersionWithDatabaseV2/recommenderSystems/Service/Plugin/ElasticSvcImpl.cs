@@ -1,10 +1,12 @@
 ﻿using recommenderSystems.Domain;
 using recommenderSystems.Service.Interface;
+using recommenderSystems.Business;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using recommenderSystems.NewRecruiteeService;
 
 namespace recommenderSystems.Service.Plugin
 {
@@ -115,9 +117,26 @@ namespace recommenderSystems.Service.Plugin
             }
         }
 
-        public void updateRanking()
+        public bool updateRanking(String path)
         {
-            // call readIDandAVG
+            try
+            {
+                List<RecruiteeDto> rec_list = (new FileSystemManager()).readIDandAVG(path);
+                // call readIDandAVG
+
+                NewRecruiteeService.ServiceWCFClient svc = new NewRecruiteeService.ServiceWCFClient();
+                foreach (RecruiteeDto rec in rec_list)
+                {
+                    RecruiteeDto recSelect = svc.selectRecruiteeById(rec);
+                    recSelect.RankingValue = rec.RankingValue;
+                    bool result = svc.updateRecruitee(recSelect);
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 }

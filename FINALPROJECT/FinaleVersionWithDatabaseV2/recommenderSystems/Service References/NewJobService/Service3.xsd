@@ -233,17 +233,17 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="selectJobIdNotDoneByRecruiteeId">
+  <xs:element name="selectJobNotDoneByRecruiteeId">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="recruiteeId" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="selectJobIdNotDoneByRecruiteeIdResponse">
+  <xs:element name="selectJobNotDoneByRecruiteeIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/UMNewJobWebsite.DomainDTO" minOccurs="0" name="selectJobIdNotDoneByRecruiteeIdResult" nillable="true" type="q21:ArrayOfJobDto" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/UMNewJobWebsite.DomainDTO" minOccurs="0" name="selectJobNotDoneByRecruiteeIdResult" nillable="true" type="q21:ArrayOfJobDto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

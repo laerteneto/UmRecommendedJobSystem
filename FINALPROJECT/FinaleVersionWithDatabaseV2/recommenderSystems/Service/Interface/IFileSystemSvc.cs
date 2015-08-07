@@ -1,4 +1,5 @@
 ﻿using recommenderSystems.Domain;
+using recommenderSystems.NewRecruiteeService;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -30,6 +31,8 @@ namespace recommenderSystems.Service.Interface
         bool writeDifficultyToFile(StreamWriter writeText, DataResult avgs);
         double[,] readFullY(String path, TaskDimensions task);
         bool writeFiles(String[] job_list, double[,] new_X, UserProfile[] users_profile, double[,] Y);
+        List<RecruiteeDto> readIDandAVG(String path);
+
 
     }
 }

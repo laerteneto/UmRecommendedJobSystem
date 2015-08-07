@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace recommenderSystems.JobService {
+namespace recommenderSystems.NewJobService {
     using System.Runtime.Serialization;
     using System;
     
@@ -463,148 +463,148 @@ namespace recommenderSystems.JobService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="JobService.IServiceWCF")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="NewJobService.IServiceWCF")]
     public interface IServiceWCF {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectAllCategory", ReplyAction="http://tempuri.org/IServiceWCF/selectAllCategoryResponse")]
-        recommenderSystems.JobService.CategoryDto[] selectAllCategory();
+        recommenderSystems.NewJobService.CategoryDto[] selectAllCategory();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectAllCategory", ReplyAction="http://tempuri.org/IServiceWCF/selectAllCategoryResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.CategoryDto[]> selectAllCategoryAsync();
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.CategoryDto[]> selectAllCategoryAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectCategoryById", ReplyAction="http://tempuri.org/IServiceWCF/selectCategoryByIdResponse")]
-        recommenderSystems.JobService.CategoryDto selectCategoryById(recommenderSystems.JobService.CategoryDto obj);
+        recommenderSystems.NewJobService.CategoryDto selectCategoryById(recommenderSystems.NewJobService.CategoryDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectCategoryById", ReplyAction="http://tempuri.org/IServiceWCF/selectCategoryByIdResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.CategoryDto> selectCategoryByIdAsync(recommenderSystems.JobService.CategoryDto obj);
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.CategoryDto> selectCategoryByIdAsync(recommenderSystems.NewJobService.CategoryDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/insertCategory", ReplyAction="http://tempuri.org/IServiceWCF/insertCategoryResponse")]
-        bool insertCategory(recommenderSystems.JobService.CategoryDto obj);
+        bool insertCategory(recommenderSystems.NewJobService.CategoryDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/insertCategory", ReplyAction="http://tempuri.org/IServiceWCF/insertCategoryResponse")]
-        System.Threading.Tasks.Task<bool> insertCategoryAsync(recommenderSystems.JobService.CategoryDto obj);
+        System.Threading.Tasks.Task<bool> insertCategoryAsync(recommenderSystems.NewJobService.CategoryDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/updateCategory", ReplyAction="http://tempuri.org/IServiceWCF/updateCategoryResponse")]
-        bool updateCategory(recommenderSystems.JobService.CategoryDto obj);
+        bool updateCategory(recommenderSystems.NewJobService.CategoryDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/updateCategory", ReplyAction="http://tempuri.org/IServiceWCF/updateCategoryResponse")]
-        System.Threading.Tasks.Task<bool> updateCategoryAsync(recommenderSystems.JobService.CategoryDto obj);
+        System.Threading.Tasks.Task<bool> updateCategoryAsync(recommenderSystems.NewJobService.CategoryDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/deleteCategory", ReplyAction="http://tempuri.org/IServiceWCF/deleteCategoryResponse")]
-        bool deleteCategory(recommenderSystems.JobService.CategoryDto obj);
+        bool deleteCategory(recommenderSystems.NewJobService.CategoryDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/deleteCategory", ReplyAction="http://tempuri.org/IServiceWCF/deleteCategoryResponse")]
-        System.Threading.Tasks.Task<bool> deleteCategoryAsync(recommenderSystems.JobService.CategoryDto obj);
+        System.Threading.Tasks.Task<bool> deleteCategoryAsync(recommenderSystems.NewJobService.CategoryDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectAllCompensation", ReplyAction="http://tempuri.org/IServiceWCF/selectAllCompensationResponse")]
-        recommenderSystems.JobService.CompensationDto[] selectAllCompensation();
+        recommenderSystems.NewJobService.CompensationDto[] selectAllCompensation();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectAllCompensation", ReplyAction="http://tempuri.org/IServiceWCF/selectAllCompensationResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.CompensationDto[]> selectAllCompensationAsync();
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.CompensationDto[]> selectAllCompensationAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectCompensationById", ReplyAction="http://tempuri.org/IServiceWCF/selectCompensationByIdResponse")]
-        recommenderSystems.JobService.CompensationDto selectCompensationById(recommenderSystems.JobService.CompensationDto obj);
+        recommenderSystems.NewJobService.CompensationDto selectCompensationById(recommenderSystems.NewJobService.CompensationDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectCompensationById", ReplyAction="http://tempuri.org/IServiceWCF/selectCompensationByIdResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.CompensationDto> selectCompensationByIdAsync(recommenderSystems.JobService.CompensationDto obj);
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.CompensationDto> selectCompensationByIdAsync(recommenderSystems.NewJobService.CompensationDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/insertCompensation", ReplyAction="http://tempuri.org/IServiceWCF/insertCompensationResponse")]
-        bool insertCompensation(recommenderSystems.JobService.CompensationDto obj);
+        bool insertCompensation(recommenderSystems.NewJobService.CompensationDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/insertCompensation", ReplyAction="http://tempuri.org/IServiceWCF/insertCompensationResponse")]
-        System.Threading.Tasks.Task<bool> insertCompensationAsync(recommenderSystems.JobService.CompensationDto obj);
+        System.Threading.Tasks.Task<bool> insertCompensationAsync(recommenderSystems.NewJobService.CompensationDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/updateCompensation", ReplyAction="http://tempuri.org/IServiceWCF/updateCompensationResponse")]
-        bool updateCompensation(recommenderSystems.JobService.CompensationDto obj);
+        bool updateCompensation(recommenderSystems.NewJobService.CompensationDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/updateCompensation", ReplyAction="http://tempuri.org/IServiceWCF/updateCompensationResponse")]
-        System.Threading.Tasks.Task<bool> updateCompensationAsync(recommenderSystems.JobService.CompensationDto obj);
+        System.Threading.Tasks.Task<bool> updateCompensationAsync(recommenderSystems.NewJobService.CompensationDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/deleteCompensation", ReplyAction="http://tempuri.org/IServiceWCF/deleteCompensationResponse")]
-        bool deleteCompensation(recommenderSystems.JobService.CompensationDto obj);
+        bool deleteCompensation(recommenderSystems.NewJobService.CompensationDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/deleteCompensation", ReplyAction="http://tempuri.org/IServiceWCF/deleteCompensationResponse")]
-        System.Threading.Tasks.Task<bool> deleteCompensationAsync(recommenderSystems.JobService.CompensationDto obj);
+        System.Threading.Tasks.Task<bool> deleteCompensationAsync(recommenderSystems.NewJobService.CompensationDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectAllEmployer", ReplyAction="http://tempuri.org/IServiceWCF/selectAllEmployerResponse")]
-        recommenderSystems.JobService.EmployerDto[] selectAllEmployer();
+        recommenderSystems.NewJobService.EmployerDto[] selectAllEmployer();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectAllEmployer", ReplyAction="http://tempuri.org/IServiceWCF/selectAllEmployerResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.EmployerDto[]> selectAllEmployerAsync();
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.EmployerDto[]> selectAllEmployerAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectEmployerById", ReplyAction="http://tempuri.org/IServiceWCF/selectEmployerByIdResponse")]
-        recommenderSystems.JobService.EmployerDto selectEmployerById(recommenderSystems.JobService.EmployerDto obj);
+        recommenderSystems.NewJobService.EmployerDto selectEmployerById(recommenderSystems.NewJobService.EmployerDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectEmployerById", ReplyAction="http://tempuri.org/IServiceWCF/selectEmployerByIdResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.EmployerDto> selectEmployerByIdAsync(recommenderSystems.JobService.EmployerDto obj);
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.EmployerDto> selectEmployerByIdAsync(recommenderSystems.NewJobService.EmployerDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/insertEmployer", ReplyAction="http://tempuri.org/IServiceWCF/insertEmployerResponse")]
-        bool insertEmployer(recommenderSystems.JobService.EmployerDto obj);
+        bool insertEmployer(recommenderSystems.NewJobService.EmployerDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/insertEmployer", ReplyAction="http://tempuri.org/IServiceWCF/insertEmployerResponse")]
-        System.Threading.Tasks.Task<bool> insertEmployerAsync(recommenderSystems.JobService.EmployerDto obj);
+        System.Threading.Tasks.Task<bool> insertEmployerAsync(recommenderSystems.NewJobService.EmployerDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/updateEmployer", ReplyAction="http://tempuri.org/IServiceWCF/updateEmployerResponse")]
-        bool updateEmployer(recommenderSystems.JobService.EmployerDto obj);
+        bool updateEmployer(recommenderSystems.NewJobService.EmployerDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/updateEmployer", ReplyAction="http://tempuri.org/IServiceWCF/updateEmployerResponse")]
-        System.Threading.Tasks.Task<bool> updateEmployerAsync(recommenderSystems.JobService.EmployerDto obj);
+        System.Threading.Tasks.Task<bool> updateEmployerAsync(recommenderSystems.NewJobService.EmployerDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/deleteEmployer", ReplyAction="http://tempuri.org/IServiceWCF/deleteEmployerResponse")]
-        bool deleteEmployer(recommenderSystems.JobService.EmployerDto obj);
+        bool deleteEmployer(recommenderSystems.NewJobService.EmployerDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/deleteEmployer", ReplyAction="http://tempuri.org/IServiceWCF/deleteEmployerResponse")]
-        System.Threading.Tasks.Task<bool> deleteEmployerAsync(recommenderSystems.JobService.EmployerDto obj);
+        System.Threading.Tasks.Task<bool> deleteEmployerAsync(recommenderSystems.NewJobService.EmployerDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectAllJob", ReplyAction="http://tempuri.org/IServiceWCF/selectAllJobResponse")]
-        recommenderSystems.JobService.JobDto[] selectAllJob();
+        recommenderSystems.NewJobService.JobDto[] selectAllJob();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectAllJob", ReplyAction="http://tempuri.org/IServiceWCF/selectAllJobResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto[]> selectAllJobAsync();
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto[]> selectAllJobAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectJobNotDoneByRecruiteeIdRecommendation", ReplyAction="http://tempuri.org/IServiceWCF/selectJobNotDoneByRecruiteeIdRecommendationRespons" +
             "e")]
-        recommenderSystems.JobService.JobDto[] selectJobNotDoneByRecruiteeIdRecommendation(string recruiteeId);
+        recommenderSystems.NewJobService.JobDto[] selectJobNotDoneByRecruiteeIdRecommendation(string recruiteeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectJobNotDoneByRecruiteeIdRecommendation", ReplyAction="http://tempuri.org/IServiceWCF/selectJobNotDoneByRecruiteeIdRecommendationRespons" +
             "e")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto[]> selectJobNotDoneByRecruiteeIdRecommendationAsync(string recruiteeId);
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto[]> selectJobNotDoneByRecruiteeIdRecommendationAsync(string recruiteeId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectJobIdNotDoneByRecruiteeId", ReplyAction="http://tempuri.org/IServiceWCF/selectJobIdNotDoneByRecruiteeIdResponse")]
-        recommenderSystems.JobService.JobDto[] selectJobIdNotDoneByRecruiteeId(string recruiteeId);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectJobNotDoneByRecruiteeId", ReplyAction="http://tempuri.org/IServiceWCF/selectJobNotDoneByRecruiteeIdResponse")]
+        recommenderSystems.NewJobService.JobDto[] selectJobNotDoneByRecruiteeId(string recruiteeId);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectJobIdNotDoneByRecruiteeId", ReplyAction="http://tempuri.org/IServiceWCF/selectJobIdNotDoneByRecruiteeIdResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto[]> selectJobIdNotDoneByRecruiteeIdAsync(string recruiteeId);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectJobById", ReplyAction="http://tempuri.org/IServiceWCF/selectJobByIdResponse")]
-        recommenderSystems.JobService.JobDto selectJobById(recommenderSystems.JobService.JobDto obj);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectJobNotDoneByRecruiteeId", ReplyAction="http://tempuri.org/IServiceWCF/selectJobNotDoneByRecruiteeIdResponse")]
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto[]> selectJobNotDoneByRecruiteeIdAsync(string recruiteeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectJobById", ReplyAction="http://tempuri.org/IServiceWCF/selectJobByIdResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto> selectJobByIdAsync(recommenderSystems.JobService.JobDto obj);
+        recommenderSystems.NewJobService.JobDto selectJobById(recommenderSystems.NewJobService.JobDto obj);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectJobById", ReplyAction="http://tempuri.org/IServiceWCF/selectJobByIdResponse")]
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto> selectJobByIdAsync(recommenderSystems.NewJobService.JobDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/insertJob", ReplyAction="http://tempuri.org/IServiceWCF/insertJobResponse")]
-        bool insertJob(recommenderSystems.JobService.JobDto obj);
+        bool insertJob(recommenderSystems.NewJobService.JobDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/insertJob", ReplyAction="http://tempuri.org/IServiceWCF/insertJobResponse")]
-        System.Threading.Tasks.Task<bool> insertJobAsync(recommenderSystems.JobService.JobDto obj);
+        System.Threading.Tasks.Task<bool> insertJobAsync(recommenderSystems.NewJobService.JobDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/updateJob", ReplyAction="http://tempuri.org/IServiceWCF/updateJobResponse")]
-        bool updateJob(recommenderSystems.JobService.JobDto obj);
+        bool updateJob(recommenderSystems.NewJobService.JobDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/updateJob", ReplyAction="http://tempuri.org/IServiceWCF/updateJobResponse")]
-        System.Threading.Tasks.Task<bool> updateJobAsync(recommenderSystems.JobService.JobDto obj);
+        System.Threading.Tasks.Task<bool> updateJobAsync(recommenderSystems.NewJobService.JobDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/deleteJob", ReplyAction="http://tempuri.org/IServiceWCF/deleteJobResponse")]
-        bool deleteJob(recommenderSystems.JobService.JobDto obj);
+        bool deleteJob(recommenderSystems.NewJobService.JobDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/deleteJob", ReplyAction="http://tempuri.org/IServiceWCF/deleteJobResponse")]
-        System.Threading.Tasks.Task<bool> deleteJobAsync(recommenderSystems.JobService.JobDto obj);
+        System.Threading.Tasks.Task<bool> deleteJobAsync(recommenderSystems.NewJobService.JobDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/createJobDTO", ReplyAction="http://tempuri.org/IServiceWCF/createJobDTOResponse")]
-        recommenderSystems.JobService.JobDto createJobDTO(System.Guid JobId, string JobName, string CompensationId, System.Guid EmployerId, string JobDescription, int JobQuota, double JobExperienceLevel, double JobCompensationValue);
+        recommenderSystems.NewJobService.JobDto createJobDTO(System.Guid JobId, string JobName, string CompensationId, System.Guid EmployerId, string JobDescription, int JobQuota, double JobExperienceLevel, double JobCompensationValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/createJobDTO", ReplyAction="http://tempuri.org/IServiceWCF/createJobDTOResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto> createJobDTOAsync(System.Guid JobId, string JobName, string CompensationId, System.Guid EmployerId, string JobDescription, int JobQuota, double JobExperienceLevel, double JobCompensationValue);
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto> createJobDTOAsync(System.Guid JobId, string JobName, string CompensationId, System.Guid EmployerId, string JobDescription, int JobQuota, double JobExperienceLevel, double JobCompensationValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/addSkillToJob", ReplyAction="http://tempuri.org/IServiceWCF/addSkillToJobResponse")]
         bool addSkillToJob(System.Guid JobId, string SkillId);
@@ -619,10 +619,10 @@ namespace recommenderSystems.JobService {
         System.Threading.Tasks.Task<bool> removeSkillFromJobAsync(System.Guid JobId, string SkillId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectJobBySkillId", ReplyAction="http://tempuri.org/IServiceWCF/selectJobBySkillIdResponse")]
-        recommenderSystems.JobService.JobDto[] selectJobBySkillId(string skillId);
+        recommenderSystems.NewJobService.JobDto[] selectJobBySkillId(string skillId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectJobBySkillId", ReplyAction="http://tempuri.org/IServiceWCF/selectJobBySkillIdResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto[]> selectJobBySkillIdAsync(string skillId);
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto[]> selectJobBySkillIdAsync(string skillId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectExpressionNames", ReplyAction="http://tempuri.org/IServiceWCF/selectExpressionNamesResponse")]
         System.Guid[] selectExpressionNames();
@@ -637,43 +637,43 @@ namespace recommenderSystems.JobService {
         System.Threading.Tasks.Task<double[]> selectExpressionDifficultyAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectAllSkill", ReplyAction="http://tempuri.org/IServiceWCF/selectAllSkillResponse")]
-        recommenderSystems.JobService.SkillDto[] selectAllSkill();
+        recommenderSystems.NewJobService.SkillDto[] selectAllSkill();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectAllSkill", ReplyAction="http://tempuri.org/IServiceWCF/selectAllSkillResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.SkillDto[]> selectAllSkillAsync();
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.SkillDto[]> selectAllSkillAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectSkillById", ReplyAction="http://tempuri.org/IServiceWCF/selectSkillByIdResponse")]
-        recommenderSystems.JobService.SkillDto selectSkillById(recommenderSystems.JobService.SkillDto obj);
+        recommenderSystems.NewJobService.SkillDto selectSkillById(recommenderSystems.NewJobService.SkillDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/selectSkillById", ReplyAction="http://tempuri.org/IServiceWCF/selectSkillByIdResponse")]
-        System.Threading.Tasks.Task<recommenderSystems.JobService.SkillDto> selectSkillByIdAsync(recommenderSystems.JobService.SkillDto obj);
+        System.Threading.Tasks.Task<recommenderSystems.NewJobService.SkillDto> selectSkillByIdAsync(recommenderSystems.NewJobService.SkillDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/insertSkill", ReplyAction="http://tempuri.org/IServiceWCF/insertSkillResponse")]
-        bool insertSkill(recommenderSystems.JobService.SkillDto obj);
+        bool insertSkill(recommenderSystems.NewJobService.SkillDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/insertSkill", ReplyAction="http://tempuri.org/IServiceWCF/insertSkillResponse")]
-        System.Threading.Tasks.Task<bool> insertSkillAsync(recommenderSystems.JobService.SkillDto obj);
+        System.Threading.Tasks.Task<bool> insertSkillAsync(recommenderSystems.NewJobService.SkillDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/updateSkill", ReplyAction="http://tempuri.org/IServiceWCF/updateSkillResponse")]
-        bool updateSkill(recommenderSystems.JobService.SkillDto obj);
+        bool updateSkill(recommenderSystems.NewJobService.SkillDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/updateSkill", ReplyAction="http://tempuri.org/IServiceWCF/updateSkillResponse")]
-        System.Threading.Tasks.Task<bool> updateSkillAsync(recommenderSystems.JobService.SkillDto obj);
+        System.Threading.Tasks.Task<bool> updateSkillAsync(recommenderSystems.NewJobService.SkillDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/deleteSkill", ReplyAction="http://tempuri.org/IServiceWCF/deleteSkillResponse")]
-        bool deleteSkill(recommenderSystems.JobService.SkillDto obj);
+        bool deleteSkill(recommenderSystems.NewJobService.SkillDto obj);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceWCF/deleteSkill", ReplyAction="http://tempuri.org/IServiceWCF/deleteSkillResponse")]
-        System.Threading.Tasks.Task<bool> deleteSkillAsync(recommenderSystems.JobService.SkillDto obj);
+        System.Threading.Tasks.Task<bool> deleteSkillAsync(recommenderSystems.NewJobService.SkillDto obj);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IServiceWCFChannel : recommenderSystems.JobService.IServiceWCF, System.ServiceModel.IClientChannel {
+    public interface IServiceWCFChannel : recommenderSystems.NewJobService.IServiceWCF, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ServiceWCFClient : System.ServiceModel.ClientBase<recommenderSystems.JobService.IServiceWCF>, recommenderSystems.JobService.IServiceWCF {
+    public partial class ServiceWCFClient : System.ServiceModel.ClientBase<recommenderSystems.NewJobService.IServiceWCF>, recommenderSystems.NewJobService.IServiceWCF {
         
         public ServiceWCFClient() {
         }
@@ -694,187 +694,187 @@ namespace recommenderSystems.JobService {
                 base(binding, remoteAddress) {
         }
         
-        public recommenderSystems.JobService.CategoryDto[] selectAllCategory() {
+        public recommenderSystems.NewJobService.CategoryDto[] selectAllCategory() {
             return base.Channel.selectAllCategory();
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.CategoryDto[]> selectAllCategoryAsync() {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.CategoryDto[]> selectAllCategoryAsync() {
             return base.Channel.selectAllCategoryAsync();
         }
         
-        public recommenderSystems.JobService.CategoryDto selectCategoryById(recommenderSystems.JobService.CategoryDto obj) {
+        public recommenderSystems.NewJobService.CategoryDto selectCategoryById(recommenderSystems.NewJobService.CategoryDto obj) {
             return base.Channel.selectCategoryById(obj);
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.CategoryDto> selectCategoryByIdAsync(recommenderSystems.JobService.CategoryDto obj) {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.CategoryDto> selectCategoryByIdAsync(recommenderSystems.NewJobService.CategoryDto obj) {
             return base.Channel.selectCategoryByIdAsync(obj);
         }
         
-        public bool insertCategory(recommenderSystems.JobService.CategoryDto obj) {
+        public bool insertCategory(recommenderSystems.NewJobService.CategoryDto obj) {
             return base.Channel.insertCategory(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> insertCategoryAsync(recommenderSystems.JobService.CategoryDto obj) {
+        public System.Threading.Tasks.Task<bool> insertCategoryAsync(recommenderSystems.NewJobService.CategoryDto obj) {
             return base.Channel.insertCategoryAsync(obj);
         }
         
-        public bool updateCategory(recommenderSystems.JobService.CategoryDto obj) {
+        public bool updateCategory(recommenderSystems.NewJobService.CategoryDto obj) {
             return base.Channel.updateCategory(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> updateCategoryAsync(recommenderSystems.JobService.CategoryDto obj) {
+        public System.Threading.Tasks.Task<bool> updateCategoryAsync(recommenderSystems.NewJobService.CategoryDto obj) {
             return base.Channel.updateCategoryAsync(obj);
         }
         
-        public bool deleteCategory(recommenderSystems.JobService.CategoryDto obj) {
+        public bool deleteCategory(recommenderSystems.NewJobService.CategoryDto obj) {
             return base.Channel.deleteCategory(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> deleteCategoryAsync(recommenderSystems.JobService.CategoryDto obj) {
+        public System.Threading.Tasks.Task<bool> deleteCategoryAsync(recommenderSystems.NewJobService.CategoryDto obj) {
             return base.Channel.deleteCategoryAsync(obj);
         }
         
-        public recommenderSystems.JobService.CompensationDto[] selectAllCompensation() {
+        public recommenderSystems.NewJobService.CompensationDto[] selectAllCompensation() {
             return base.Channel.selectAllCompensation();
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.CompensationDto[]> selectAllCompensationAsync() {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.CompensationDto[]> selectAllCompensationAsync() {
             return base.Channel.selectAllCompensationAsync();
         }
         
-        public recommenderSystems.JobService.CompensationDto selectCompensationById(recommenderSystems.JobService.CompensationDto obj) {
+        public recommenderSystems.NewJobService.CompensationDto selectCompensationById(recommenderSystems.NewJobService.CompensationDto obj) {
             return base.Channel.selectCompensationById(obj);
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.CompensationDto> selectCompensationByIdAsync(recommenderSystems.JobService.CompensationDto obj) {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.CompensationDto> selectCompensationByIdAsync(recommenderSystems.NewJobService.CompensationDto obj) {
             return base.Channel.selectCompensationByIdAsync(obj);
         }
         
-        public bool insertCompensation(recommenderSystems.JobService.CompensationDto obj) {
+        public bool insertCompensation(recommenderSystems.NewJobService.CompensationDto obj) {
             return base.Channel.insertCompensation(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> insertCompensationAsync(recommenderSystems.JobService.CompensationDto obj) {
+        public System.Threading.Tasks.Task<bool> insertCompensationAsync(recommenderSystems.NewJobService.CompensationDto obj) {
             return base.Channel.insertCompensationAsync(obj);
         }
         
-        public bool updateCompensation(recommenderSystems.JobService.CompensationDto obj) {
+        public bool updateCompensation(recommenderSystems.NewJobService.CompensationDto obj) {
             return base.Channel.updateCompensation(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> updateCompensationAsync(recommenderSystems.JobService.CompensationDto obj) {
+        public System.Threading.Tasks.Task<bool> updateCompensationAsync(recommenderSystems.NewJobService.CompensationDto obj) {
             return base.Channel.updateCompensationAsync(obj);
         }
         
-        public bool deleteCompensation(recommenderSystems.JobService.CompensationDto obj) {
+        public bool deleteCompensation(recommenderSystems.NewJobService.CompensationDto obj) {
             return base.Channel.deleteCompensation(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> deleteCompensationAsync(recommenderSystems.JobService.CompensationDto obj) {
+        public System.Threading.Tasks.Task<bool> deleteCompensationAsync(recommenderSystems.NewJobService.CompensationDto obj) {
             return base.Channel.deleteCompensationAsync(obj);
         }
         
-        public recommenderSystems.JobService.EmployerDto[] selectAllEmployer() {
+        public recommenderSystems.NewJobService.EmployerDto[] selectAllEmployer() {
             return base.Channel.selectAllEmployer();
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.EmployerDto[]> selectAllEmployerAsync() {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.EmployerDto[]> selectAllEmployerAsync() {
             return base.Channel.selectAllEmployerAsync();
         }
         
-        public recommenderSystems.JobService.EmployerDto selectEmployerById(recommenderSystems.JobService.EmployerDto obj) {
+        public recommenderSystems.NewJobService.EmployerDto selectEmployerById(recommenderSystems.NewJobService.EmployerDto obj) {
             return base.Channel.selectEmployerById(obj);
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.EmployerDto> selectEmployerByIdAsync(recommenderSystems.JobService.EmployerDto obj) {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.EmployerDto> selectEmployerByIdAsync(recommenderSystems.NewJobService.EmployerDto obj) {
             return base.Channel.selectEmployerByIdAsync(obj);
         }
         
-        public bool insertEmployer(recommenderSystems.JobService.EmployerDto obj) {
+        public bool insertEmployer(recommenderSystems.NewJobService.EmployerDto obj) {
             return base.Channel.insertEmployer(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> insertEmployerAsync(recommenderSystems.JobService.EmployerDto obj) {
+        public System.Threading.Tasks.Task<bool> insertEmployerAsync(recommenderSystems.NewJobService.EmployerDto obj) {
             return base.Channel.insertEmployerAsync(obj);
         }
         
-        public bool updateEmployer(recommenderSystems.JobService.EmployerDto obj) {
+        public bool updateEmployer(recommenderSystems.NewJobService.EmployerDto obj) {
             return base.Channel.updateEmployer(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> updateEmployerAsync(recommenderSystems.JobService.EmployerDto obj) {
+        public System.Threading.Tasks.Task<bool> updateEmployerAsync(recommenderSystems.NewJobService.EmployerDto obj) {
             return base.Channel.updateEmployerAsync(obj);
         }
         
-        public bool deleteEmployer(recommenderSystems.JobService.EmployerDto obj) {
+        public bool deleteEmployer(recommenderSystems.NewJobService.EmployerDto obj) {
             return base.Channel.deleteEmployer(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> deleteEmployerAsync(recommenderSystems.JobService.EmployerDto obj) {
+        public System.Threading.Tasks.Task<bool> deleteEmployerAsync(recommenderSystems.NewJobService.EmployerDto obj) {
             return base.Channel.deleteEmployerAsync(obj);
         }
         
-        public recommenderSystems.JobService.JobDto[] selectAllJob() {
+        public recommenderSystems.NewJobService.JobDto[] selectAllJob() {
             return base.Channel.selectAllJob();
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto[]> selectAllJobAsync() {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto[]> selectAllJobAsync() {
             return base.Channel.selectAllJobAsync();
         }
         
-        public recommenderSystems.JobService.JobDto[] selectJobNotDoneByRecruiteeIdRecommendation(string recruiteeId) {
+        public recommenderSystems.NewJobService.JobDto[] selectJobNotDoneByRecruiteeIdRecommendation(string recruiteeId) {
             return base.Channel.selectJobNotDoneByRecruiteeIdRecommendation(recruiteeId);
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto[]> selectJobNotDoneByRecruiteeIdRecommendationAsync(string recruiteeId) {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto[]> selectJobNotDoneByRecruiteeIdRecommendationAsync(string recruiteeId) {
             return base.Channel.selectJobNotDoneByRecruiteeIdRecommendationAsync(recruiteeId);
         }
         
-        public recommenderSystems.JobService.JobDto[] selectJobIdNotDoneByRecruiteeId(string recruiteeId) {
-            return base.Channel.selectJobIdNotDoneByRecruiteeId(recruiteeId);
+        public recommenderSystems.NewJobService.JobDto[] selectJobNotDoneByRecruiteeId(string recruiteeId) {
+            return base.Channel.selectJobNotDoneByRecruiteeId(recruiteeId);
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto[]> selectJobIdNotDoneByRecruiteeIdAsync(string recruiteeId) {
-            return base.Channel.selectJobIdNotDoneByRecruiteeIdAsync(recruiteeId);
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto[]> selectJobNotDoneByRecruiteeIdAsync(string recruiteeId) {
+            return base.Channel.selectJobNotDoneByRecruiteeIdAsync(recruiteeId);
         }
         
-        public recommenderSystems.JobService.JobDto selectJobById(recommenderSystems.JobService.JobDto obj) {
+        public recommenderSystems.NewJobService.JobDto selectJobById(recommenderSystems.NewJobService.JobDto obj) {
             return base.Channel.selectJobById(obj);
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto> selectJobByIdAsync(recommenderSystems.JobService.JobDto obj) {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto> selectJobByIdAsync(recommenderSystems.NewJobService.JobDto obj) {
             return base.Channel.selectJobByIdAsync(obj);
         }
         
-        public bool insertJob(recommenderSystems.JobService.JobDto obj) {
+        public bool insertJob(recommenderSystems.NewJobService.JobDto obj) {
             return base.Channel.insertJob(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> insertJobAsync(recommenderSystems.JobService.JobDto obj) {
+        public System.Threading.Tasks.Task<bool> insertJobAsync(recommenderSystems.NewJobService.JobDto obj) {
             return base.Channel.insertJobAsync(obj);
         }
         
-        public bool updateJob(recommenderSystems.JobService.JobDto obj) {
+        public bool updateJob(recommenderSystems.NewJobService.JobDto obj) {
             return base.Channel.updateJob(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> updateJobAsync(recommenderSystems.JobService.JobDto obj) {
+        public System.Threading.Tasks.Task<bool> updateJobAsync(recommenderSystems.NewJobService.JobDto obj) {
             return base.Channel.updateJobAsync(obj);
         }
         
-        public bool deleteJob(recommenderSystems.JobService.JobDto obj) {
+        public bool deleteJob(recommenderSystems.NewJobService.JobDto obj) {
             return base.Channel.deleteJob(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> deleteJobAsync(recommenderSystems.JobService.JobDto obj) {
+        public System.Threading.Tasks.Task<bool> deleteJobAsync(recommenderSystems.NewJobService.JobDto obj) {
             return base.Channel.deleteJobAsync(obj);
         }
         
-        public recommenderSystems.JobService.JobDto createJobDTO(System.Guid JobId, string JobName, string CompensationId, System.Guid EmployerId, string JobDescription, int JobQuota, double JobExperienceLevel, double JobCompensationValue) {
+        public recommenderSystems.NewJobService.JobDto createJobDTO(System.Guid JobId, string JobName, string CompensationId, System.Guid EmployerId, string JobDescription, int JobQuota, double JobExperienceLevel, double JobCompensationValue) {
             return base.Channel.createJobDTO(JobId, JobName, CompensationId, EmployerId, JobDescription, JobQuota, JobExperienceLevel, JobCompensationValue);
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto> createJobDTOAsync(System.Guid JobId, string JobName, string CompensationId, System.Guid EmployerId, string JobDescription, int JobQuota, double JobExperienceLevel, double JobCompensationValue) {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto> createJobDTOAsync(System.Guid JobId, string JobName, string CompensationId, System.Guid EmployerId, string JobDescription, int JobQuota, double JobExperienceLevel, double JobCompensationValue) {
             return base.Channel.createJobDTOAsync(JobId, JobName, CompensationId, EmployerId, JobDescription, JobQuota, JobExperienceLevel, JobCompensationValue);
         }
         
@@ -894,11 +894,11 @@ namespace recommenderSystems.JobService {
             return base.Channel.removeSkillFromJobAsync(JobId, SkillId);
         }
         
-        public recommenderSystems.JobService.JobDto[] selectJobBySkillId(string skillId) {
+        public recommenderSystems.NewJobService.JobDto[] selectJobBySkillId(string skillId) {
             return base.Channel.selectJobBySkillId(skillId);
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.JobDto[]> selectJobBySkillIdAsync(string skillId) {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.JobDto[]> selectJobBySkillIdAsync(string skillId) {
             return base.Channel.selectJobBySkillIdAsync(skillId);
         }
         
@@ -918,43 +918,43 @@ namespace recommenderSystems.JobService {
             return base.Channel.selectExpressionDifficultyAsync();
         }
         
-        public recommenderSystems.JobService.SkillDto[] selectAllSkill() {
+        public recommenderSystems.NewJobService.SkillDto[] selectAllSkill() {
             return base.Channel.selectAllSkill();
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.SkillDto[]> selectAllSkillAsync() {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.SkillDto[]> selectAllSkillAsync() {
             return base.Channel.selectAllSkillAsync();
         }
         
-        public recommenderSystems.JobService.SkillDto selectSkillById(recommenderSystems.JobService.SkillDto obj) {
+        public recommenderSystems.NewJobService.SkillDto selectSkillById(recommenderSystems.NewJobService.SkillDto obj) {
             return base.Channel.selectSkillById(obj);
         }
         
-        public System.Threading.Tasks.Task<recommenderSystems.JobService.SkillDto> selectSkillByIdAsync(recommenderSystems.JobService.SkillDto obj) {
+        public System.Threading.Tasks.Task<recommenderSystems.NewJobService.SkillDto> selectSkillByIdAsync(recommenderSystems.NewJobService.SkillDto obj) {
             return base.Channel.selectSkillByIdAsync(obj);
         }
         
-        public bool insertSkill(recommenderSystems.JobService.SkillDto obj) {
+        public bool insertSkill(recommenderSystems.NewJobService.SkillDto obj) {
             return base.Channel.insertSkill(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> insertSkillAsync(recommenderSystems.JobService.SkillDto obj) {
+        public System.Threading.Tasks.Task<bool> insertSkillAsync(recommenderSystems.NewJobService.SkillDto obj) {
             return base.Channel.insertSkillAsync(obj);
         }
         
-        public bool updateSkill(recommenderSystems.JobService.SkillDto obj) {
+        public bool updateSkill(recommenderSystems.NewJobService.SkillDto obj) {
             return base.Channel.updateSkill(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> updateSkillAsync(recommenderSystems.JobService.SkillDto obj) {
+        public System.Threading.Tasks.Task<bool> updateSkillAsync(recommenderSystems.NewJobService.SkillDto obj) {
             return base.Channel.updateSkillAsync(obj);
         }
         
-        public bool deleteSkill(recommenderSystems.JobService.SkillDto obj) {
+        public bool deleteSkill(recommenderSystems.NewJobService.SkillDto obj) {
             return base.Channel.deleteSkill(obj);
         }
         
-        public System.Threading.Tasks.Task<bool> deleteSkillAsync(recommenderSystems.JobService.SkillDto obj) {
+        public System.Threading.Tasks.Task<bool> deleteSkillAsync(recommenderSystems.NewJobService.SkillDto obj) {
             return base.Channel.deleteSkillAsync(obj);
         }
     }
